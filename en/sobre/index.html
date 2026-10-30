@@ -131,7 +131,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* o pai direto (.e-con-inner, caixa de 1140px) vira a referência: o cabeçalho de largura total começa 29px acima da janela */
 		body .elementor .e-con-inner:has(> .cat-idiomas-box){position:relative}
 		body .elementor .cat-idiomas-box{position:absolute;top:48px;right:0;width:auto}
-		/* menu: com CONSELHO são 9 itens; tamanho que cabe numa linha ao lado da lupa nos três idiomas */
+		/* menu: tamanho que cabe numa linha ao lado da lupa nos três idiomas */
 		body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:1px!important}
 		html:not([lang^="pt"]) body .elementor .cat-menu .elementor-icon-list-text{font-size:11.5px!important;letter-spacing:.7px!important}
 		@media(min-width:1025px) and (max-width:1200px){body .elementor .cat-menu .elementor-icon-list-text{font-size:10.5px!important;letter-spacing:.4px!important}}
@@ -187,7 +187,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		body .elementor .cat-pessoa .elementor-heading-title a:hover{color:var(--cat-suave)}
 		/* pessoas: cards centrados, colunas largas e fileiras incompletas no meio da página, sem texto justificado */
 		body .elementor .cat-fileira-pessoas>.e-con-inner,body .elementor .cat-fileira-pessoas{align-items:center}
-		body .elementor .cat-fileira-pessoas>.cat-cab,body .elementor .cat-fileira-pessoas>.e-con-inner>.cat-cab{text-align:center;align-self:stretch}
+		body .elementor .cat-grupo-titulo{align-self:stretch;border-top:1px solid var(--cat-linha);padding-top:28px}
+		body .elementor .cat-grupo-titulo .elementor-heading-title{font:900 15px/1.4 "Nunito Sans",sans-serif;letter-spacing:8px;text-transform:uppercase;color:var(--cat-tinta);text-align:center}
 		body .elementor .cat-grade-pessoas,body .elementor .cat-grade-pessoas>.e-con-inner{display:flex!important;flex-wrap:wrap;justify-content:center;gap:80px 48px!important;width:100%}
 		body .elementor .cat-grade-pessoas .cat-pessoa{flex:0 0 calc((100% - 4*48px)/5)!important;width:auto!important;max-width:calc((100% - 4*48px)/5);align-items:center;text-align:center}
 		body .elementor .cat-pessoa>.e-con-inner{align-items:center}
@@ -472,12 +473,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="../conselho/index.html">
-
-											<span class="elementor-icon-list-text">ADVISORY BOARD</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item elementor-inline-item">
 											<a href="../projetos/index.html">
 
 											<span class="elementor-icon-list-text">PROJECTS</span>
@@ -517,7 +512,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-7ca5c03 cat-idiomas-box elementor-widget elementor-widget-html" data-id="7ca5c03" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-ef00b05 cat-idiomas-box elementor-widget elementor-widget-html" data-id="ef00b05" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Language"><a href="../../sobre/index.html" lang="pt" hreflang="pt">PT</a><a href="index.html" lang="en" hreflang="en" class="ativo" aria-current="true">EN</a><a href="../../es/sobre/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>
@@ -586,12 +581,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											<a href="../pessoas/index.html">
 
 											<span class="elementor-icon-list-text">PEOPLE</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="../conselho/index.html">
-
-											<span class="elementor-icon-list-text">ADVISORY BOARD</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
