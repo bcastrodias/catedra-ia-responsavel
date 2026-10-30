@@ -133,8 +133,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* o pai direto (.e-con-inner, caixa de 1140px) vira a referência: o cabeçalho de largura total começa 29px acima da janela */
 		body .elementor .e-con-inner:has(> .cat-idiomas-box){position:relative}
 		body .elementor .cat-idiomas-box{position:absolute;top:48px;right:0;width:auto}
-		/* menu em espanhol é mais longo: um pouco menor para caber numa linha ao lado da lupa */
-		html[lang="es"] body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:.9px!important}
+		/* menu: com CONSELHO são 9 itens; tamanho que cabe numa linha ao lado da lupa nos três idiomas */
+		body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:1px!important}
+		html:not([lang^="pt"]) body .elementor .cat-menu .elementor-icon-list-text{font-size:11.5px!important;letter-spacing:.7px!important}
+		@media(min-width:1025px) and (max-width:1200px){body .elementor .cat-menu .elementor-icon-list-text{font-size:10.5px!important;letter-spacing:.4px!important}}
 		body .elementor .cat-idiomas{display:flex;gap:18px;margin:0}
 		body .elementor .cat-idiomas a{font:900 11px/1 "Nunito Sans",sans-serif;letter-spacing:2.5px;color:var(--cat-cinza);text-decoration:none;padding-bottom:5px;background:url(../wp-content/uploads/2026/06/Original_V4.webp) left bottom/0% 3px no-repeat;transition:background-size .25s,color .25s}
 		body .elementor .cat-idiomas a:hover,body .elementor .cat-idiomas a.ativo{color:var(--cat-tinta);background-size:100% 3px}
@@ -472,6 +474,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="conselho/index.html">
+
+											<span class="elementor-icon-list-text">ADVISORY BOARD</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
 											<a href="projetos/index.html">
 
 											<span class="elementor-icon-list-text">PROJECTS</span>
@@ -511,7 +519,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-f431e0a cat-idiomas-box elementor-widget elementor-widget-html" data-id="f431e0a" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-48de45d cat-idiomas-box elementor-widget elementor-widget-html" data-id="48de45d" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Language"><a href="../index.html" lang="pt" hreflang="pt">PT</a><a href="index.html" lang="en" hreflang="en" class="ativo" aria-current="true">EN</a><a href="../es/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>
@@ -532,49 +540,49 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									<p>Between the potential of Artificial Intelligence,<br>the risks and social responsibility</p>								</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-351b9ff e-con-boxed cat-parceiros e-flex e-con e-parent" data-id="351b9ff" data-element_type="container" data-e-type="container" id="parceiros" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-f352fe1 e-con-boxed cat-parceiros e-flex e-con e-parent" data-id="f352fe1" data-element_type="container" data-e-type="container" id="parceiros" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-568de25 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="568de25" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-6b41dbd e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="6b41dbd" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-2bec87e e-con-full cat-parceiros-linha e-flex e-con e-child" data-id="2bec87e" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-3b57fb5 e-con-full cat-logos e-flex e-con e-child" data-id="3b57fb5" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-29b2584 cat-cab cat-logo-rotulo elementor-widget elementor-widget-heading" data-id="29b2584" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-dcd0ccb e-con-full cat-parceiros-linha e-flex e-con e-child" data-id="dcd0ccb" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-8f35ae4 e-con-full cat-logos e-flex e-con e-child" data-id="8f35ae4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d043fb9 cat-cab cat-logo-rotulo elementor-widget elementor-widget-heading" data-id="d043fb9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNER</div>				</div>
-				<div class="elementor-element elementor-element-c69a288 cat-logo cat-logo-parceira elementor-widget elementor-widget-image" data-id="c69a288" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-8c17825 cat-logo cat-logo-parceira elementor-widget elementor-widget-image" data-id="8c17825" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://www.google.com/" target="_blank">
 							<img decoding="async" width="300" height="125" src="../wp-content/uploads/2026/06/Google-logo-300x125.png" class="attachment-medium size-medium wp-image-1545" alt="" srcset="../wp-content/uploads/2026/06/Google-logo-300x125.png 300w, ../wp-content/uploads/2026/06/Google-logo-1024x427.png 1024w, ../wp-content/uploads/2026/06/Google-logo-768x320.png 768w, ../wp-content/uploads/2026/06/Google-logo-1536x640.png 1536w, ../wp-content/uploads/2026/06/Google-logo-2048x853.png 2048w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
 				</div>
-		<div class="elementor-element elementor-element-faeae71 e-con-full cat-logos e-flex e-con e-child" data-id="faeae71" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-f09ae95 cat-cab cat-logo-rotulo elementor-widget elementor-widget-heading" data-id="f09ae95" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-13ca6d8 e-con-full cat-logos e-flex e-con e-child" data-id="13ca6d8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4644678 cat-cab cat-logo-rotulo elementor-widget elementor-widget-heading" data-id="4644678" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">WITH THE SUPPORT OF</div>				</div>
-				<div class="elementor-element elementor-element-9978293 cat-logo elementor-widget elementor-widget-image" data-id="9978293" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-2aa3b37 cat-logo elementor-widget elementor-widget-image" data-id="2aa3b37" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://www.nic.br/" target="_blank">
 							<img decoding="async" width="300" height="162" src="../wp-content/uploads/2026/09/parceiro-nicbr-300x162.png" class="attachment-medium size-medium wp-image-1832" alt="NIC.br" srcset="../wp-content/uploads/2026/09/parceiro-nicbr-300x162.png 300w, ../wp-content/uploads/2026/09/parceiro-nicbr.png 694w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
-				<div class="elementor-element elementor-element-ecbe54c cat-logo elementor-widget elementor-widget-image" data-id="ecbe54c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-d64bfa1 cat-logo elementor-widget elementor-widget-image" data-id="d64bfa1" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://ircai.org/" target="_blank">
 							<img loading="lazy" decoding="async" width="300" height="128" src="../wp-content/uploads/2026/09/parceiro-ircai-300x128.png" class="attachment-medium size-medium wp-image-1833" alt="IRCAI – International Research Centre on Artificial Intelligence" srcset="../wp-content/uploads/2026/09/parceiro-ircai-300x128.png 300w, ../wp-content/uploads/2026/09/parceiro-ircai.png 666w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
-				<div class="elementor-element elementor-element-2227851 elementor-widget elementor-widget-html" data-id="2227851" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-de28cad elementor-widget elementor-widget-html" data-id="de28cad" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<a class="cat-logo-lockup" href="https://direitosp.fgv.br/" target="_blank" rel="noopener"><img decoding="async" src="../wp-content/uploads/2026/09/parceiro-fgv-300x54.png" alt="FGV"><span>DIREITO SP</span></a>				</div>
-				<div class="elementor-element elementor-element-0324813 cat-logo cat-logo-cepid elementor-widget elementor-widget-image" data-id="0324813" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-f082c28 cat-logo cat-logo-cepid elementor-widget elementor-widget-image" data-id="f082c28" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://cepidbridge.fea.usp.br/" target="_blank">
 							<img loading="lazy" decoding="async" width="300" height="89" src="../wp-content/uploads/2026/09/parceiro-cepid-bridge-300x89.png" class="attachment-medium size-medium wp-image-1845" alt="CEPID Bridge – Building Radical Innovation &amp; Disruption for Global Ecosystems" srcset="../wp-content/uploads/2026/09/parceiro-cepid-bridge-300x89.png 300w, ../wp-content/uploads/2026/09/parceiro-cepid-bridge-768x227.png 768w, ../wp-content/uploads/2026/09/parceiro-cepid-bridge.png 786w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
-				<div class="elementor-element elementor-element-adc6cdc cat-logo cat-logo-anker elementor-widget elementor-widget-image" data-id="adc6cdc" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-29618b3 cat-logo cat-logo-anker elementor-widget elementor-widget-image" data-id="29618b3" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://www.ankerresearchinstitute.org/" target="_blank">
 							<img loading="lazy" decoding="async" width="300" height="220" src="../wp-content/uploads/2026/09/parceiro-anker-300x220.png" class="attachment-medium size-medium wp-image-1849" alt="Anker Research Institute" srcset="../wp-content/uploads/2026/09/parceiro-anker-300x220.png 300w, ../wp-content/uploads/2026/09/parceiro-anker.png 391w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
-				<div class="elementor-element elementor-element-868b76e cat-logo-texto elementor-widget elementor-widget-heading" data-id="868b76e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-5aec3c1 cat-logo-texto elementor-widget elementor-widget-heading" data-id="5aec3c1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.gov.br/saude/" target="_blank">MINISTÉRIO<br>DA SAÚDE</a></div>				</div>
-				<div class="elementor-element elementor-element-de039b3 cat-logo-texto elementor-widget elementor-widget-heading" data-id="de039b3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-142aedf cat-logo-texto elementor-widget elementor-widget-heading" data-id="142aedf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.gov.br/gestao/" target="_blank">MINISTÉRIO DA GESTÃO<br>E DA INOVAÇÃO EM<br>SERVIÇOS PÚBLICOS</a></div>				</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-d74ff6f e-con-full cat-faixa-destaque lente-viva e-flex e-con e-parent" data-id="d74ff6f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-6441bbb e-con-full cat-faixa-destaque lente-viva e-flex e-con e-parent" data-id="6441bbb" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 		<div class="elementor-element elementor-element-f57165a e-flex e-con-boxed e-con e-parent" data-id="f57165a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
@@ -641,6 +649,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											<a href="pessoas/index.html">
 
 											<span class="elementor-icon-list-text">PEOPLE</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="conselho/index.html">
+
+											<span class="elementor-icon-list-text">ADVISORY BOARD</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">

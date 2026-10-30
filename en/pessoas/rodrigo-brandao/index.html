@@ -131,8 +131,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* o pai direto (.e-con-inner, caixa de 1140px) vira a referência: o cabeçalho de largura total começa 29px acima da janela */
 		body .elementor .e-con-inner:has(> .cat-idiomas-box){position:relative}
 		body .elementor .cat-idiomas-box{position:absolute;top:48px;right:0;width:auto}
-		/* menu em espanhol é mais longo: um pouco menor para caber numa linha ao lado da lupa */
-		html[lang="es"] body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:.9px!important}
+		/* menu: com CONSELHO são 9 itens; tamanho que cabe numa linha ao lado da lupa nos três idiomas */
+		body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:1px!important}
+		html:not([lang^="pt"]) body .elementor .cat-menu .elementor-icon-list-text{font-size:11.5px!important;letter-spacing:.7px!important}
+		@media(min-width:1025px) and (max-width:1200px){body .elementor .cat-menu .elementor-icon-list-text{font-size:10.5px!important;letter-spacing:.4px!important}}
 		body .elementor .cat-idiomas{display:flex;gap:18px;margin:0}
 		body .elementor .cat-idiomas a{font:900 11px/1 "Nunito Sans",sans-serif;letter-spacing:2.5px;color:var(--cat-cinza);text-decoration:none;padding-bottom:5px;background:url(../../../wp-content/uploads/2026/06/Original_V4.webp) left bottom/0% 3px no-repeat;transition:background-size .25s,color .25s}
 		body .elementor .cat-idiomas a:hover,body .elementor .cat-idiomas a.ativo{color:var(--cat-tinta);background-size:100% 3px}
@@ -442,14 +444,14 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
 <body class="wp-singular page-template page-template-elementor_canvas page page-id-1863 page-child parent-pageid-1854 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-1863">
 			<div data-elementor-type="wp-page" data-elementor-id="1863" class="elementor elementor-1863">
-				<div class="elementor-element elementor-element-abc59db e-con-full e-flex e-con e-parent" data-id="abc59db" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-ebb3f09 e-flex e-con-boxed e-con e-child" data-id="ebb3f09" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-65693b0 e-con-full e-flex e-con e-parent" data-id="65693b0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-edb739d e-flex e-con-boxed e-con e-child" data-id="edb739d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-b897a60 e-con-full e-flex e-con e-child" data-id="b897a60" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-081c8d9 elementor-widget elementor-widget-image" data-id="081c8d9" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-9f6d257 e-con-full e-flex e-con e-child" data-id="9f6d257" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-88e3d5e elementor-widget elementor-widget-image" data-id="88e3d5e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img fetchpriority="high" decoding="async" width="800" height="450" src="../../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1024x576.png" class="attachment-large size-large wp-image-1828" alt="" srcset="../../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1024x576.png 1024w, ../../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-300x169.png 300w, ../../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-768x432.png 768w, ../../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1536x864.png 1536w, ../../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-2048x1152.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
-				<div class="elementor-element elementor-element-f57227c elementor-icon-list--layout-inline elementor-align-end elementor-widget__width-initial cat-menu elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="f57227c" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-ca98cb5 elementor-icon-list--layout-inline elementor-align-end elementor-widget__width-initial cat-menu elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ca98cb5" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
 											<a href="../../index.html">
@@ -467,6 +469,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											<a href="../index.html">
 
 											<span class="elementor-icon-list-text">PEOPLE</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="../../conselho/index.html">
+
+											<span class="elementor-icon-list-text">ADVISORY BOARD</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
@@ -509,127 +517,127 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-42c37eb cat-idiomas-box elementor-widget elementor-widget-html" data-id="42c37eb" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-e289e36 cat-idiomas-box elementor-widget elementor-widget-html" data-id="e289e36" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Language"><a href="../../../pessoas/rodrigo-brandao/index.html" lang="pt" hreflang="pt">PT</a><a href="index.html" lang="en" hreflang="en" class="ativo" aria-current="true">EN</a><a href="../../../es/pessoas/rodrigo-brandao/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-bbc9146 e-con-boxed e-flex e-con e-parent" data-id="bbc9146" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-410d6cc e-con-boxed e-flex e-con e-parent" data-id="410d6cc" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-cbe3f6f e-con-full cat-fixa e-flex e-con e-child" data-id="cbe3f6f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-a080f75 elementor-widget elementor-widget-image" data-id="a080f75" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-83033c3 e-con-full cat-fixa e-flex e-con e-child" data-id="83033c3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-af488cb elementor-widget elementor-widget-image" data-id="af488cb" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img decoding="async" width="180" height="180" src="../../../wp-content/uploads/2026/10/rodrigo.jpg" class="attachment-large size-large wp-image-1850" alt="Rodrigo Brandão" srcset="../../../wp-content/uploads/2026/10/rodrigo.jpg 180w, ../../../wp-content/uploads/2026/10/rodrigo-150x150.jpg 150w" sizes="(max-width: 180px) 100vw, 180px" />															</div>
-		<div class="elementor-element elementor-element-f62362b e-con-full lente-viva e-flex e-con e-child" data-id="f62362b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-c509eb8 e-con-full lente-viva e-flex e-con e-child" data-id="c509eb8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-45a2d74 e-con-full lente-viva e-flex e-con e-child" data-id="45a2d74" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-cc5d717 e-con-full lente-viva e-flex e-con e-child" data-id="cc5d717" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-ce353be e-con-full lente-viva e-flex e-con e-child" data-id="ce353be" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-f21b066 e-con-full lente-viva e-flex e-con e-child" data-id="f21b066" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-7ae5713 e-con-full cat-perfil-cabeca cat-fixa e-flex e-con e-child" data-id="7ae5713" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-98decbb elementor-widget elementor-widget-heading" data-id="98decbb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-ec824d6 e-con-full cat-perfil-cabeca cat-fixa e-flex e-con e-child" data-id="ec824d6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7c6c2e5 elementor-widget elementor-widget-heading" data-id="7c6c2e5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Rodrigo Brandão</h2>				</div>
-				<div class="elementor-element elementor-element-e1d6360 elementor-widget elementor-widget-heading" data-id="e1d6360" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-ea2fd76 elementor-widget elementor-widget-heading" data-id="ea2fd76" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Coordinating researcher</h2>				</div>
-				<div class="elementor-element elementor-element-ffea6a8 cat-links cat-ficha elementor-widget elementor-widget-text-editor" data-id="ffea6a8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-9d64bee cat-links cat-ficha elementor-widget elementor-widget-text-editor" data-id="9d64bee" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><a href="http://lattes.cnpq.br/0232792301572399" target="_blank" rel="noopener">LATTES</a><br><a href="https://www.linkedin.com/in/rodrigo-brand%C3%A3o-0ba42024/" target="_blank" rel="noopener">LINKEDIN</a></p>								</div>
-		<div class="elementor-element elementor-element-c2e4abc e-con-full e-flex e-con e-child" data-id="c2e4abc" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-69e5c84 cat-cab cat-direita elementor-widget elementor-widget-heading" data-id="69e5c84" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-97762f9 e-con-full e-flex e-con e-child" data-id="97762f9" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0e663aa cat-cab cat-direita elementor-widget elementor-widget-heading" data-id="0e663aa" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">RESEARCH AREAS</div>				</div>
-				<div class="elementor-element elementor-element-898f711 cat-areas cat-direita elementor-widget elementor-widget-heading" data-id="898f711" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-fe0170f cat-areas cat-direita elementor-widget elementor-widget-heading" data-id="fe0170f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">AI governance and regulation in the public sector; facial recognition; emerging technologies and the labour market.</div>				</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-714efe6 e-con-boxed e-flex e-con e-parent" data-id="714efe6" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-fbe8aa1 e-con-boxed e-flex e-con e-parent" data-id="fbe8aa1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-64bd5b3 cat-cab elementor-widget elementor-widget-heading" data-id="64bd5b3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-1c043bc cat-cab elementor-widget elementor-widget-heading" data-id="1c043bc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">BIOGRAPHY</div>				</div>
-				<div class="elementor-element elementor-element-6a07e70 cat-bio elementor-widget elementor-widget-text-editor" data-id="6a07e70" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-955816c cat-bio elementor-widget elementor-widget-text-editor" data-id="955816c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Researcher at Cetic.br|NIC.br and at the Center for Artificial Intelligence (C4AI, USP-FAPESP-IBM) and coordinator of the Innovation and Competitiveness Observatory (OIC), based at USP&#8217;s Institute of Advanced Studies. Bachelor in Social Sciences, specialist in Economics and master in Political Science from USP, he holds a PhD in Sociology from the same university (2025), with a thesis on the governance of artificial intelligence in the public sector and the adoption of facial recognition by Brazilian municipalities, supervised by Glauco Arbix.</p><p>Previously, he was assistant coordinator of studies and debates at the Fernando Henrique Cardoso Foundation and an institutional relations specialist at Companhia Siderúrgica Nacional.</p>								</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-49ee908 e-con-boxed e-flex e-con e-parent" data-id="49ee908" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-7cdcf8c e-con-boxed e-flex e-con e-parent" data-id="7cdcf8c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-c4710ff cat-cab elementor-widget elementor-widget-heading" data-id="c4710ff" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-b671616 cat-cab elementor-widget elementor-widget-heading" data-id="b671616" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PUBLICATIONS</div>				</div>
-		<div class="elementor-element elementor-element-7700e39 e-con-full cat-publicacoes e-flex e-con e-child" data-id="7700e39" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-0637158 e-con-full e-flex e-con e-child" data-id="0637158" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-af5c011 cat-rotulo elementor-widget elementor-widget-heading" data-id="af5c011" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-2385293 e-con-full cat-publicacoes e-flex e-con e-child" data-id="2385293" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-53007ee e-con-full e-flex e-con e-child" data-id="53007ee" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a9c64e1 cat-rotulo elementor-widget elementor-widget-heading" data-id="a9c64e1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">BOOK</div>				</div>
-				<div class="elementor-element elementor-element-d0f2864 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="d0f2864" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-1d38067 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="1d38067" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/atualidades/a-regulamentacao-esta-na-base-dos-problemas-apresentados-pela-utilizacao-da-ia/" target="_blank">IA na Encruzilhada: desafios geopolíticos, regulatórios e de governança</a></h3>				</div>
-				<div class="elementor-element elementor-element-fc2f0ec cat-meta elementor-widget elementor-widget-text-editor" data-id="fc2f0ec" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-b757690 cat-meta elementor-widget elementor-widget-text-editor" data-id="b757690" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-autores"><a href="../glauco-arbix/index.html">Glauco Arbix</a> and <a href="index.html">Rodrigo Brandão</a></p><p class="cat-quando">mar. 2026</p><p class="cat-resumo">Eleven chapters by 21 USP researchers on the geopolitical, regulatory and governance challenges of AI, from infrastructure to content, and on the limits society needs to impose on technology.</p><p class="cat-ref"><span class="cat-ref-onde">Publisher to be confirmed</span> · Edited volume, 11 chapters</p>								</div>
-				<div class="elementor-element elementor-element-b9f565c cat-link elementor-widget elementor-widget-heading" data-id="b9f565c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-e393a58 cat-link elementor-widget elementor-widget-heading" data-id="e393a58" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/atualidades/a-regulamentacao-esta-na-base-dos-problemas-apresentados-pela-utilizacao-da-ia/" target="_blank">LINK →</a></div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-951b48a e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="951b48a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5505032 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="5505032" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-dce79ac e-con-full e-flex e-con e-child" data-id="dce79ac" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-5e60b21 cat-rotulo elementor-widget elementor-widget-heading" data-id="5e60b21" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-0510a52 e-con-full e-flex e-con e-child" data-id="0510a52" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1ab9535 cat-rotulo elementor-widget elementor-widget-heading" data-id="1ab9535" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">DOCTORAL THESIS</div>				</div>
-				<div class="elementor-element elementor-element-c3f4cf6 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="c3f4cf6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-be77f43 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="be77f43" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://teses.usp.br/teses/disponiveis/8/8132/tde-21032025-093839/publico/2025_RodrigoBrandao_VCorrig.pdf" target="_blank">Governança da Inteligência Artificial no setor público: capacidades técnico-administrativas vacilantes, falta de atenção aos municípios e polarização do debate – uma soma perigosa para a municipalização do reconhecimento facial no Brasil</a></h3>				</div>
-				<div class="elementor-element elementor-element-b8c2c8d cat-meta elementor-widget elementor-widget-text-editor" data-id="b8c2c8d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-4766cbe cat-meta elementor-widget elementor-widget-text-editor" data-id="4766cbe" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-autores"><a href="index.html">Rodrigo Brandão</a></p><p class="cat-quando">mar. 2025</p><p class="cat-resumo">Shows that the public sector&#8217;s experience as a user of AI enriches the governance debate, drawing on the spread of facial recognition in public transport in state capitals and cities of more than one million inhabitants.</p><p class="cat-ref"><span class="cat-ref-onde">FFLCH-USP</span> · Doctoral thesis in Sociology, supervised by Glauco Arbix, 300 pp.</p>								</div>
-				<div class="elementor-element elementor-element-239ce2e cat-link elementor-widget elementor-widget-heading" data-id="239ce2e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-e142435 cat-link elementor-widget elementor-widget-heading" data-id="e142435" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://teses.usp.br/teses/disponiveis/8/8132/tde-21032025-093839/publico/2025_RodrigoBrandao_VCorrig.pdf" target="_blank">LINK →</a></div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-247d3c8 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="247d3c8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-f2fb385 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="f2fb385" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-8234156 e-con-full e-flex e-con e-child" data-id="8234156" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-894a5f1 cat-rotulo elementor-widget elementor-widget-heading" data-id="894a5f1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-69ba42c e-con-full e-flex e-con e-child" data-id="69ba42c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0a5aa3d cat-rotulo elementor-widget elementor-widget-heading" data-id="0a5aa3d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">BOOK CHAPTER</div>				</div>
-				<div class="elementor-element elementor-element-bcb2ef6 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="bcb2ef6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-c177122 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="c177122" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://nev.prp.usp.br/publicacao/tecnologia-seguranca-e-direitos-os-usos-e-riscos-de-sistemas-de-reconhecimento-facial-no-brasil-2/" target="_blank">Tecnologias de reconhecimento facial na administração pública brasileira: desafios técnicos e sociais para o uso responsável da tecnologia</a></h3>				</div>
-				<div class="elementor-element elementor-element-fede3dc cat-meta elementor-widget elementor-widget-text-editor" data-id="fede3dc" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-4dc0be9 cat-meta elementor-widget elementor-widget-text-editor" data-id="4dc0be9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-autores"><a href="index.html">Rodrigo Brandão</a></p><p class="cat-quando">2022</p><p class="cat-resumo">Presents uses of facial recognition systems by the Brazilian public administration and the technical and social challenges of employing the technology responsibly.</p><p class="cat-ref"><span class="cat-ref-onde">Konrad Adenauer Foundation</span> · In: Tecnologia, Segurança e Direitos: os usos e riscos de sistemas de reconhecimento facial no Brasil (eds. D. E. Duarte and E. M. Ceia), Rio de Janeiro</p>								</div>
-				<div class="elementor-element elementor-element-4207fb4 cat-link elementor-widget elementor-widget-heading" data-id="4207fb4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-5671b24 cat-link elementor-widget elementor-widget-heading" data-id="5671b24" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://nev.prp.usp.br/publicacao/tecnologia-seguranca-e-direitos-os-usos-e-riscos-de-sistemas-de-reconhecimento-facial-no-brasil-2/" target="_blank">LINK →</a></div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-c2e43d4 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="c2e43d4" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-127531b e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="127531b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-71bd2ac e-con-full e-flex e-con e-child" data-id="71bd2ac" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-6175adb cat-rotulo elementor-widget elementor-widget-heading" data-id="6175adb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-b7eec36 e-con-full e-flex e-con e-child" data-id="b7eec36" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f882f2c cat-rotulo elementor-widget elementor-widget-heading" data-id="f882f2c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">REVIEW</div>				</div>
-				<div class="elementor-element elementor-element-6dbc823 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="6dbc823" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-e473e69 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="e473e69" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://periodicos.fclar.unesp.br/estudos/article/view/13404" target="_blank">Vigilância, estágio superior do capitalismo. Será?</a></h3>				</div>
-				<div class="elementor-element elementor-element-f915c00 cat-meta elementor-widget elementor-widget-text-editor" data-id="f915c00" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-52d16cd cat-meta elementor-widget elementor-widget-text-editor" data-id="52d16cd" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-autores"><a href="../glauco-arbix/index.html">Glauco Arbix</a> and <a href="index.html">Rodrigo Brandão</a></p><p class="cat-quando">jul. 2020</p><p class="cat-resumo">Review of The Age of Surveillance Capitalism, by Shoshana Zuboff, which brings the impacts of digitalisation to the centre of the political stage; the authors ask whether surveillance really constitutes a new stage of capitalism.</p><p class="cat-ref"><span class="cat-ref-onde">Estudos de Sociologia (Unesp)</span> · vol. 25, no. 48, pp. 353-359</p>								</div>
-				<div class="elementor-element elementor-element-badf4f2 cat-link elementor-widget elementor-widget-heading" data-id="badf4f2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-2b8c669 cat-link elementor-widget elementor-widget-heading" data-id="2b8c669" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://periodicos.fclar.unesp.br/estudos/article/view/13404" target="_blank">LINK →</a></div>				</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-f31dd9e cat-link elementor-widget elementor-widget-heading" data-id="f31dd9e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-82c5ba8 cat-link elementor-widget elementor-widget-heading" data-id="82c5ba8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="../../acervo/index.html">FULL LIBRARY →</a></div>				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-ecd8a74 e-con-boxed e-flex e-con e-parent" data-id="ecd8a74" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d18cf3d e-con-boxed e-flex e-con e-parent" data-id="d18cf3d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-4f09ccc cat-link cat-voltar elementor-widget elementor-widget-heading" data-id="4f09ccc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-1703f0a cat-link cat-voltar elementor-widget elementor-widget-heading" data-id="1703f0a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="../index.html">← ALL PEOPLE</a></div>				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-c5c3b85 e-flex e-con-boxed e-con e-parent" data-id="c5c3b85" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-ae4fd12 e-flex e-con-boxed e-con e-parent" data-id="ae4fd12" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-c4f2842 e-con-full e-flex e-con e-child" data-id="c4f2842" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-3bd231f elementor-widget elementor-widget-image" data-id="3bd231f" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-25bde09 e-con-full e-flex e-con e-child" data-id="25bde09" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-aca3084 elementor-widget elementor-widget-image" data-id="aca3084" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img decoding="async" width="800" height="450" src="../../../wp-content/uploads/2026/09/Logo-Negativa-USP-1024x576.png" class="attachment-large size-large wp-image-1829" alt="" srcset="../../../wp-content/uploads/2026/09/Logo-Negativa-USP-1024x576.png 1024w, ../../../wp-content/uploads/2026/09/Logo-Negativa-USP-300x169.png 300w, ../../../wp-content/uploads/2026/09/Logo-Negativa-USP-768x432.png 768w, ../../../wp-content/uploads/2026/09/Logo-Negativa-USP-1536x864.png 1536w, ../../../wp-content/uploads/2026/09/Logo-Negativa-USP-2048x1152.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
-				<div class="elementor-element elementor-element-e4822aa elementor-widget elementor-widget-heading" data-id="e4822aa" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-26d78b7 elementor-widget elementor-widget-heading" data-id="26d78b7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">This project is a partnership between</h2>				</div>
-		<div class="elementor-element elementor-element-eda0f01 e-con-full e-flex e-con e-child" data-id="eda0f01" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e5b658b elementor-widget elementor-widget-image" data-id="e5b658b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-acf8ed3 e-con-full e-flex e-con e-child" data-id="acf8ed3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-97e380b elementor-widget elementor-widget-image" data-id="97e380b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="300" height="126" src="../../../wp-content/uploads/2026/05/usp-logo-eps-branco-300x126.png" class="attachment-medium size-medium wp-image-809" alt="" srcset="../../../wp-content/uploads/2026/05/usp-logo-eps-branco-300x126.png 300w, ../../../wp-content/uploads/2026/05/usp-logo-eps-branco-768x324.png 768w, ../../../wp-content/uploads/2026/05/usp-logo-eps-branco.png 800w" sizes="(max-width: 300px) 100vw, 300px" />															</div>
-				<div class="elementor-element elementor-element-4719387 elementor-widget elementor-widget-heading" data-id="4719387" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-0e19a3a elementor-widget elementor-widget-heading" data-id="0e19a3a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">  and</h2>				</div>
-				<div class="elementor-element elementor-element-0b3b382 elementor-widget elementor-widget-image" data-id="0b3b382" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-2da89a2 elementor-widget elementor-widget-image" data-id="2da89a2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="300" height="125" src="../../../wp-content/uploads/2026/06/Google-logo-300x125.png" class="attachment-medium size-medium wp-image-1545" alt="" srcset="../../../wp-content/uploads/2026/06/Google-logo-300x125.png 300w, ../../../wp-content/uploads/2026/06/Google-logo-1024x427.png 1024w, ../../../wp-content/uploads/2026/06/Google-logo-768x320.png 768w, ../../../wp-content/uploads/2026/06/Google-logo-1536x640.png 1536w, ../../../wp-content/uploads/2026/06/Google-logo-2048x853.png 2048w" sizes="(max-width: 300px) 100vw, 300px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-18bed68 e-con-full e-flex e-con e-child" data-id="18bed68" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-9c12155 cat-menu elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="9c12155" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-element elementor-element-8e6350e e-con-full e-flex e-con e-child" data-id="8e6350e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3952ae9 cat-menu elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3952ae9" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
 											<a href="../../sobre/index.html">
@@ -641,6 +649,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											<a href="../index.html">
 
 											<span class="elementor-icon-list-text">PEOPLE</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="../../conselho/index.html">
+
+											<span class="elementor-icon-list-text">ADVISORY BOARD</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
@@ -675,35 +689,35 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-		<div class="elementor-element elementor-element-824c407 e-con-full e-flex e-con e-child" data-id="824c407" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-cce7edb e-con-full e-flex e-con e-child" data-id="cce7edb" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-c20cacd elementor-view-default elementor-widget elementor-widget-icon" data-id="c20cacd" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-241ba81 e-con-full e-flex e-con e-child" data-id="241ba81" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-bccb6e1 e-con-full e-flex e-con e-child" data-id="bccb6e1" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6e710da elementor-view-default elementor-widget elementor-widget-icon" data-id="6e710da" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-287064c elementor-view-default elementor-widget elementor-widget-icon" data-id="287064c" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-6b38f40 elementor-view-default elementor-widget elementor-widget-icon" data-id="6b38f40" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-8999377 elementor-view-default elementor-widget elementor-widget-icon" data-id="8999377" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-fc75d16 elementor-view-default elementor-widget elementor-widget-icon" data-id="fc75d16" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-ad6c057 elementor-view-default elementor-widget elementor-widget-icon" data-id="ad6c057" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-e2dcb4d elementor-view-default elementor-widget elementor-widget-icon" data-id="e2dcb4d" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-envelope" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>			</a>
 		</div>
 						</div>
 				</div>
-		<div class="elementor-element elementor-element-e34cbf3 e-con-full e-flex e-con e-child" data-id="e34cbf3" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-43a02c1 elementor-widget elementor-widget-text-editor" data-id="43a02c1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-52c87bb e-con-full e-flex e-con e-child" data-id="52c87bb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-95863cf elementor-widget elementor-widget-text-editor" data-id="95863cf" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Design by <a href="https://www.victoriaflaksbaum.com/">Victoria Flaksbaum</a></p>								</div>
 				</div>
 				</div>

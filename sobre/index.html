@@ -131,8 +131,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* o pai direto (.e-con-inner, caixa de 1140px) vira a referência: o cabeçalho de largura total começa 29px acima da janela */
 		body .elementor .e-con-inner:has(> .cat-idiomas-box){position:relative}
 		body .elementor .cat-idiomas-box{position:absolute;top:48px;right:0;width:auto}
-		/* menu em espanhol é mais longo: um pouco menor para caber numa linha ao lado da lupa */
-		html[lang="es"] body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:.9px!important}
+		/* menu: com CONSELHO são 9 itens; tamanho que cabe numa linha ao lado da lupa nos três idiomas */
+		body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:1px!important}
+		html:not([lang^="pt"]) body .elementor .cat-menu .elementor-icon-list-text{font-size:11.5px!important;letter-spacing:.7px!important}
+		@media(min-width:1025px) and (max-width:1200px){body .elementor .cat-menu .elementor-icon-list-text{font-size:10.5px!important;letter-spacing:.4px!important}}
 		body .elementor .cat-idiomas{display:flex;gap:18px;margin:0}
 		body .elementor .cat-idiomas a{font:900 11px/1 "Nunito Sans",sans-serif;letter-spacing:2.5px;color:var(--cat-cinza);text-decoration:none;padding-bottom:5px;background:url(../wp-content/uploads/2026/06/Original_V4.webp) left bottom/0% 3px no-repeat;transition:background-size .25s,color .25s}
 		body .elementor .cat-idiomas a:hover,body .elementor .cat-idiomas a.ativo{color:var(--cat-tinta);background-size:100% 3px}
@@ -470,6 +472,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="../conselho/index.html">
+
+											<span class="elementor-icon-list-text">CONSELHO</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
 											<a href="../projetos/index.html">
 
 											<span class="elementor-icon-list-text">PROJETOS</span>
@@ -509,7 +517,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-dfb9eeb cat-idiomas-box elementor-widget elementor-widget-html" data-id="dfb9eeb" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-7ca5c03 cat-idiomas-box elementor-widget elementor-widget-html" data-id="7ca5c03" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Idioma"><a href="index.html" lang="pt" hreflang="pt" class="ativo" aria-current="true">PT</a><a href="../en/sobre/index.html" lang="en" hreflang="en">EN</a><a href="../es/sobre/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>
@@ -578,6 +586,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											<a href="../pessoas/index.html">
 
 											<span class="elementor-icon-list-text">PESSOAS</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="../conselho/index.html">
+
+											<span class="elementor-icon-list-text">CONSELHO</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">

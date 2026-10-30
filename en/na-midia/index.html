@@ -131,8 +131,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* o pai direto (.e-con-inner, caixa de 1140px) vira a referência: o cabeçalho de largura total começa 29px acima da janela */
 		body .elementor .e-con-inner:has(> .cat-idiomas-box){position:relative}
 		body .elementor .cat-idiomas-box{position:absolute;top:48px;right:0;width:auto}
-		/* menu em espanhol é mais longo: um pouco menor para caber numa linha ao lado da lupa */
-		html[lang="es"] body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:.9px!important}
+		/* menu: com CONSELHO são 9 itens; tamanho que cabe numa linha ao lado da lupa nos três idiomas */
+		body .elementor .cat-menu .elementor-icon-list-text{font-size:12px!important;letter-spacing:1px!important}
+		html:not([lang^="pt"]) body .elementor .cat-menu .elementor-icon-list-text{font-size:11.5px!important;letter-spacing:.7px!important}
+		@media(min-width:1025px) and (max-width:1200px){body .elementor .cat-menu .elementor-icon-list-text{font-size:10.5px!important;letter-spacing:.4px!important}}
 		body .elementor .cat-idiomas{display:flex;gap:18px;margin:0}
 		body .elementor .cat-idiomas a{font:900 11px/1 "Nunito Sans",sans-serif;letter-spacing:2.5px;color:var(--cat-cinza);text-decoration:none;padding-bottom:5px;background:url(../../wp-content/uploads/2026/06/Original_V4.webp) left bottom/0% 3px no-repeat;transition:background-size .25s,color .25s}
 		body .elementor .cat-idiomas a:hover,body .elementor .cat-idiomas a.ativo{color:var(--cat-tinta);background-size:100% 3px}
@@ -442,14 +444,14 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
 <body class="wp-singular page-template page-template-elementor_canvas page page-id-1861 page-child parent-pageid-1853 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-1861">
 			<div data-elementor-type="wp-page" data-elementor-id="1861" class="elementor elementor-1861">
-				<div class="elementor-element elementor-element-d133c44 e-con-full e-flex e-con e-parent" data-id="d133c44" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-c82ae65 e-flex e-con-boxed e-con e-child" data-id="c82ae65" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-3ca632a e-con-full e-flex e-con e-parent" data-id="3ca632a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-b59e837 e-flex e-con-boxed e-con e-child" data-id="b59e837" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-42aef7c e-con-full e-flex e-con e-child" data-id="42aef7c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-5b31de2 elementor-widget elementor-widget-image" data-id="5b31de2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-cfde417 e-con-full e-flex e-con e-child" data-id="cfde417" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2be26ea elementor-widget elementor-widget-image" data-id="2be26ea" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img fetchpriority="high" decoding="async" width="800" height="450" src="../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1024x576.png" class="attachment-large size-large wp-image-1828" alt="" srcset="../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1024x576.png 1024w, ../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-300x169.png 300w, ../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-768x432.png 768w, ../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1536x864.png 1536w, ../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-2048x1152.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
-				<div class="elementor-element elementor-element-72dd579 elementor-icon-list--layout-inline elementor-align-end elementor-widget__width-initial cat-menu elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="72dd579" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-2b3da38 elementor-icon-list--layout-inline elementor-align-end elementor-widget__width-initial cat-menu elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2b3da38" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
 											<a href="../index.html">
@@ -467,6 +469,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											<a href="../pessoas/index.html">
 
 											<span class="elementor-icon-list-text">PEOPLE</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="../conselho/index.html">
+
+											<span class="elementor-icon-list-text">ADVISORY BOARD</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
@@ -509,339 +517,339 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-179aa67 cat-idiomas-box elementor-widget elementor-widget-html" data-id="179aa67" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-dbc6299 cat-idiomas-box elementor-widget elementor-widget-html" data-id="dbc6299" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Language"><a href="../../na-midia/index.html" lang="pt" hreflang="pt">PT</a><a href="index.html" lang="en" hreflang="en" class="ativo" aria-current="true">EN</a><a href="../../es/na-midia/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-f2e480f e-con-full e-flex e-con e-parent" data-id="f2e480f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-b04d774 e-con-full cat-textura cat-fixa elementor-hidden-mobile e-flex e-con e-child" data-id="b04d774" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-fbd9393 e-con-full e-flex e-con e-parent" data-id="fbd9393" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-1495ed9 e-con-full cat-textura cat-fixa elementor-hidden-mobile e-flex e-con e-child" data-id="1495ed9" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-9bbccc7 e-con-full cat-textura cat-desce-mais cat-fixa elementor-hidden-mobile e-flex e-con e-child" data-id="9bbccc7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-2b46679 e-con-full cat-textura cat-desce-mais cat-fixa elementor-hidden-mobile e-flex e-con e-child" data-id="2b46679" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-09ccb4f e-con-full cat-abertura-texto cat-cresce e-flex e-con e-child" data-id="09ccb4f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-0c8208f elementor-widget elementor-widget-heading" data-id="0c8208f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-757009f e-con-full cat-abertura-texto cat-cresce e-flex e-con e-child" data-id="757009f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-674ea95 elementor-widget elementor-widget-heading" data-id="674ea95" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h1 class="elementor-heading-title elementor-size-default">IN THE MEDIA</h1>				</div>
-		<div class="elementor-element elementor-element-3c9ceae e-con-full cat-citacao-bloco e-flex e-con e-child" data-id="3c9ceae" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-1f8228f cat-aspas-textura elementor-widget elementor-widget-heading" data-id="1f8228f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-c623004 e-con-full cat-citacao-bloco e-flex e-con e-child" data-id="c623004" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-aeb6282 cat-aspas-textura elementor-widget elementor-widget-heading" data-id="aeb6282" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">“</div>				</div>
-				<div class="elementor-element elementor-element-9d83b89 cat-frase elementor-widget elementor-widget-text-editor" data-id="9d83b89" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-81696bf cat-frase elementor-widget elementor-widget-text-editor" data-id="81696bf" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Responsible AI does not replace human action and thought; it expands them.</p>								</div>
-				<div class="elementor-element elementor-element-c67d835 cat-rotulo cat-rotulo-escuro cat-rotulo-link elementor-widget elementor-widget-heading" data-id="c67d835" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-7e6293a cat-rotulo cat-rotulo-escuro cat-rotulo-link elementor-widget elementor-widget-heading" data-id="7e6293a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/noticias/documentos/discurso-glauco-arbix-catedra-ia-responsavel" target="_blank">GLAUCO ARBIX · LAUNCH OF THE CHAIR, 2025 →</a></div>				</div>
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-6d7f81c e-con-boxed e-flex e-con e-parent" data-id="6d7f81c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-62b1299 e-con-boxed e-flex e-con e-parent" data-id="62b1299" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-52d3f43 elementor-widget elementor-widget-html" data-id="52d3f43" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-2e2eb6e elementor-widget elementor-widget-html" data-id="2e2eb6e" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<div class="cat-filtros" data-alvo="cat-materia" role="toolbar" aria-label="Filter by type"><button type="button" data-f="todos" class="ativo">All</button><button type="button" data-f="reportagem">News reports</button><button type="button" data-f="entrevista">Interviews</button><button type="button" data-f="opiniao">Columns</button><button type="button" data-f="audio">Podcasts and videos</button></div>				</div>
-		<div class="elementor-element elementor-element-b9b9c1b e-con-full cat-materias e-flex e-con e-child" data-id="b9b9c1b" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-b738e1f e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="b738e1f" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-80a1bf9 e-con-full cat-fixa e-flex e-con e-child" data-id="80a1bf9" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-57e16af cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="57e16af" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-40b322f e-con-full cat-materias e-flex e-con e-child" data-id="40b322f" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-cc0fcb9 e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="cc0fcb9" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-eca93bd e-con-full cat-fixa e-flex e-con e-child" data-id="eca93bd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-43eb3a6 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="43eb3a6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">JORNAL DA USP</div>				</div>
-				<div class="elementor-element elementor-element-adbbd82 cat-rotulo elementor-widget elementor-widget-heading" data-id="adbbd82" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-9efb07a cat-rotulo elementor-widget elementor-widget-heading" data-id="9efb07a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">INTERVIEW · MAR 2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-0e3e6ac e-con-full cat-cresce e-flex e-con e-child" data-id="0e3e6ac" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-b49438e cat-manchete elementor-widget elementor-widget-heading" data-id="b49438e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-06c5427 e-con-full cat-cresce e-flex e-con e-child" data-id="06c5427" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1efd501 cat-manchete elementor-widget elementor-widget-heading" data-id="1efd501" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/atualidades/a-regulamentacao-esta-na-base-dos-problemas-apresentados-pela-utilizacao-da-ia/" target="_blank">Regulation lies at the root of the problems raised by the use of AI</a></h3>				</div>
-				<div class="elementor-element elementor-element-f050bb2 cat-meta elementor-widget elementor-widget-text-editor" data-id="f050bb2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-dc951f5 cat-meta elementor-widget elementor-widget-text-editor" data-id="dc951f5" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>On the book IA na Encruzilhada, edited with Rodrigo Brandão: society must impose regulatory limits on technology, even if that is easier said than done.</p>								</div>
-				<div class="elementor-element elementor-element-8851232 cat-link elementor-widget elementor-widget-heading" data-id="8851232" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-023c1ea cat-link elementor-widget elementor-widget-heading" data-id="023c1ea" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/atualidades/a-regulamentacao-esta-na-base-dos-problemas-apresentados-pela-utilizacao-da-ia/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-728eb05 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="728eb05" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-f416629 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="f416629" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-886b9e4 e-con-full cat-item tipo-reportagem e-flex e-con e-child" data-id="886b9e4" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-c782a82 e-con-full cat-fixa e-flex e-con e-child" data-id="c782a82" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8c3bdde cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="8c3bdde" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9200c80 e-con-full cat-item tipo-reportagem e-flex e-con e-child" data-id="9200c80" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-5cd639c e-con-full cat-fixa e-flex e-con e-child" data-id="5cd639c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c2eb597 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="c2eb597" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">OLHAR DIGITAL</div>				</div>
-				<div class="elementor-element elementor-element-cc7cda5 cat-rotulo elementor-widget elementor-widget-heading" data-id="cc7cda5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-8d83ef2 cat-rotulo elementor-widget elementor-widget-heading" data-id="8d83ef2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">NEWS REPORT · DEC 2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-a0509fb e-con-full cat-cresce e-flex e-con e-child" data-id="a0509fb" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8a15be9 cat-manchete elementor-widget elementor-widget-heading" data-id="8a15be9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-1646a5b e-con-full cat-cresce e-flex e-con e-child" data-id="1646a5b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-724edbd cat-manchete elementor-widget elementor-widget-heading" data-id="724edbd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://olhardigital.com.br/2025/12/04/pro/usp-e-google-criam-espaco-dedicado-a-ia-responsavel-e-politicas-publicas/" target="_blank">USP and Google create a space dedicated to responsible AI and public policy</a></h3>				</div>
-				<div class="elementor-element elementor-element-039a679 cat-meta elementor-widget elementor-widget-text-editor" data-id="039a679" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-42e0137 cat-meta elementor-widget elementor-widget-text-editor" data-id="42e0137" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>The Chair will be an interdisciplinary laboratory on the ethical, legal, economic and social questions of AI, with the goal of supporting public policy, Arbix tells the reporter.</p>								</div>
-				<div class="elementor-element elementor-element-18cbd72 cat-link elementor-widget elementor-widget-heading" data-id="18cbd72" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-d4f2cbd cat-link elementor-widget elementor-widget-heading" data-id="d4f2cbd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://olhardigital.com.br/2025/12/04/pro/usp-e-google-criam-espaco-dedicado-a-ia-responsavel-e-politicas-publicas/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-59d2c2e e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="59d2c2e" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-7af74d7 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="7af74d7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-8811eb4 e-con-full cat-item tipo-reportagem e-flex e-con e-child" data-id="8811eb4" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-db79f89 e-con-full cat-fixa e-flex e-con e-child" data-id="db79f89" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-de858e8 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="de858e8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-10c8f8c e-con-full cat-item tipo-reportagem e-flex e-con e-child" data-id="10c8f8c" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-09aa243 e-con-full cat-fixa e-flex e-con e-child" data-id="09aa243" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1076e75 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="1076e75" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">JORNAL DA USP</div>				</div>
-				<div class="elementor-element elementor-element-1becd69 cat-rotulo elementor-widget elementor-widget-heading" data-id="1becd69" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-436eae9 cat-rotulo elementor-widget elementor-widget-heading" data-id="436eae9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">NEWS REPORT · NOV 2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-a5a291f e-con-full cat-cresce e-flex e-con e-child" data-id="a5a291f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-ad63245 cat-manchete elementor-widget elementor-widget-heading" data-id="ad63245" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-47b0bd7 e-con-full cat-cresce e-flex e-con e-child" data-id="47b0bd7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8285bbd cat-manchete elementor-widget elementor-widget-heading" data-id="8285bbd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/universidade/nova-catedra-da-usp-vai-promover-estudos-sobre-beneficios-e-riscos-da-inteligencia-artificial/" target="_blank">New USP chair will promote studies on the benefits and risks of artificial intelligence</a></h3>				</div>
-				<div class="elementor-element elementor-element-b2d9b68 cat-meta elementor-widget elementor-widget-text-editor" data-id="b2d9b68" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-2a2de47 cat-meta elementor-widget elementor-widget-text-editor" data-id="2a2de47" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>“The central goal is to help artificial intelligence make human capacities broader.”</p>								</div>
-				<div class="elementor-element elementor-element-455ed6c cat-link elementor-widget elementor-widget-heading" data-id="455ed6c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-29a7137 cat-link elementor-widget elementor-widget-heading" data-id="29a7137" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/universidade/nova-catedra-da-usp-vai-promover-estudos-sobre-beneficios-e-riscos-da-inteligencia-artificial/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-0d5673b e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="0d5673b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-b02a4d5 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="b02a4d5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-d5eadfc e-con-full cat-item tipo-audio e-flex e-con e-child" data-id="d5eadfc" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-908284a e-con-full cat-fixa e-flex e-con e-child" data-id="908284a" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-6e46a74 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="6e46a74" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-f16bc8a e-con-full cat-item tipo-audio e-flex e-con e-child" data-id="f16bc8a" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-23155ec e-con-full cat-fixa e-flex e-con e-child" data-id="23155ec" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f4321a2 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="f4321a2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">JORNAL DA USP · ALÉM DO ALGORITMO #15</div>				</div>
-				<div class="elementor-element elementor-element-1902f4d cat-rotulo elementor-widget elementor-widget-heading" data-id="1902f4d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-e435f5f cat-rotulo elementor-widget elementor-widget-heading" data-id="e435f5f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PODCAST / VÍDEO · NOV 2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-4741d20 e-con-full cat-cresce e-flex e-con e-child" data-id="4741d20" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-70d0da9 cat-manchete elementor-widget elementor-widget-heading" data-id="70d0da9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-7281f43 e-con-full cat-cresce e-flex e-con e-child" data-id="7281f43" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2cf4e71 cat-manchete elementor-widget elementor-widget-heading" data-id="2cf4e71" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/podcast/alem-do-algoritmo-15-interagir-com-mortos-por-ia-e-agressao-ao-luto-diz-professor/" target="_blank">Interacting with the dead through AI is an assault on grief, says professor</a></h3>				</div>
-				<div class="elementor-element elementor-element-4a62859 cat-meta elementor-widget elementor-widget-text-editor" data-id="4a62859" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-a438456 cat-meta elementor-widget elementor-widget-text-editor" data-id="a438456" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Recreating dead people with AI weakens grief and exposes children and vulnerable people; there is no protection against this kind of relationship.</p>								</div>
-				<div class="elementor-element elementor-element-8d7952d cat-link elementor-widget elementor-widget-heading" data-id="8d7952d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-15f2ae6 cat-link elementor-widget elementor-widget-heading" data-id="15f2ae6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/podcast/alem-do-algoritmo-15-interagir-com-mortos-por-ia-e-agressao-ao-luto-diz-professor/" target="_blank">WATCH OR LISTEN →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-cbcd06b e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="cbcd06b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-46a8cc8 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="46a8cc8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-88926e8 e-con-full cat-item tipo-audio e-flex e-con e-child" data-id="88926e8" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-64d23b4 e-con-full cat-fixa e-flex e-con e-child" data-id="64d23b4" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e04d044 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="e04d044" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-ded72be e-con-full cat-item tipo-audio e-flex e-con e-child" data-id="ded72be" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-03b5221 e-con-full cat-fixa e-flex e-con e-child" data-id="03b5221" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7755798 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="7755798" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">JORNAL DA USP · ALÉM DO ALGORITMO #13</div>				</div>
-				<div class="elementor-element elementor-element-28e13cf cat-rotulo elementor-widget elementor-widget-heading" data-id="28e13cf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-bf0ff20 cat-rotulo elementor-widget elementor-widget-heading" data-id="bf0ff20" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PODCAST / VÍDEO · AUG 2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-ea31ad7 e-con-full cat-cresce e-flex e-con e-child" data-id="ea31ad7" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-6b94c30 cat-manchete elementor-widget elementor-widget-heading" data-id="6b94c30" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-1546284 e-con-full cat-cresce e-flex e-con e-child" data-id="1546284" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-919afd3 cat-manchete elementor-widget elementor-widget-heading" data-id="919afd3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/podcast/alem-do-algoritmo-13-glauco-arbix-questiona-a-jornada-996/" target="_blank">Glauco Arbix questions the 996 work schedule</a></h3>				</div>
-				<div class="elementor-element elementor-element-c1d6081 cat-meta elementor-widget elementor-widget-text-editor" data-id="c1d6081" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-c8abde4 cat-meta elementor-widget elementor-widget-text-editor" data-id="c8abde4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>With journalist Marcello Rollemberg: the 72-hour week advocated by Silicon Valley startups reproduces the worst of the industrial revolutions in a world of AI.</p>								</div>
-				<div class="elementor-element elementor-element-402de14 cat-link elementor-widget elementor-widget-heading" data-id="402de14" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-cc41b46 cat-link elementor-widget elementor-widget-heading" data-id="cc41b46" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/podcast/alem-do-algoritmo-13-glauco-arbix-questiona-a-jornada-996/" target="_blank">WATCH OR LISTEN →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-25c8caa e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="25c8caa" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-1d1847b e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="1d1847b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-8421752 e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="8421752" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-4aa1e52 e-con-full cat-fixa e-flex e-con e-child" data-id="4aa1e52" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-f8447f2 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="f8447f2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-0980b2d e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="0980b2d" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-38dedd3 e-con-full cat-fixa e-flex e-con e-child" data-id="38dedd3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0280e40 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="0280e40" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">CANAL UM BRASIL</div>				</div>
-				<div class="elementor-element elementor-element-8609118 cat-rotulo elementor-widget elementor-widget-heading" data-id="8609118" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-7ac7d8c cat-rotulo elementor-widget elementor-widget-heading" data-id="7ac7d8c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">INTERVIEW · AUG 2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-888f24a e-con-full cat-cresce e-flex e-con e-child" data-id="888f24a" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-4895a65 cat-manchete elementor-widget elementor-widget-heading" data-id="4895a65" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-11e7fc6 e-con-full cat-cresce e-flex e-con e-child" data-id="11e7fc6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9ecb690 cat-manchete elementor-widget elementor-widget-heading" data-id="9ecb690" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://umbrasil.com/entrevistados/glauco-arbix/" target="_blank">Regulation and innovation: interview with Canal UM BRASIL</a></h3>				</div>
-				<div class="elementor-element elementor-element-135ca8e cat-meta elementor-widget elementor-widget-text-editor" data-id="135ca8e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-5aebe38 cat-meta elementor-widget elementor-widget-text-editor" data-id="5aebe38" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Arbix defends the regulation of new technologies such as AI and recalls that health, a heavily regulated field, accounts for about a third of the world&#8217;s innovation.</p>								</div>
-				<div class="elementor-element elementor-element-545e650 cat-link elementor-widget elementor-widget-heading" data-id="545e650" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-cda21eb cat-link elementor-widget elementor-widget-heading" data-id="cda21eb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://umbrasil.com/entrevistados/glauco-arbix/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-e53293a e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="e53293a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-fa481d5 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="fa481d5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-6a9833d e-con-full cat-item tipo-opiniao e-flex e-con e-child" data-id="6a9833d" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-9f56216 e-con-full cat-fixa e-flex e-con e-child" data-id="9f56216" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8d9cc85 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="8d9cc85" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-84d698b e-con-full cat-item tipo-opiniao e-flex e-con e-child" data-id="84d698b" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-3f431e5 e-con-full cat-fixa e-flex e-con e-child" data-id="3f431e5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9f239f7 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="9f239f7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">RÁDIO USP · OBSERVATÓRIO DA INOVAÇÃO</div>				</div>
-				<div class="elementor-element elementor-element-fe6b1e5 cat-rotulo elementor-widget elementor-widget-heading" data-id="fe6b1e5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-ea62816 cat-rotulo elementor-widget elementor-widget-heading" data-id="ea62816" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">COLUMN · JUN 2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-f946568 e-con-full cat-cresce e-flex e-con e-child" data-id="f946568" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e768f97 cat-manchete elementor-widget elementor-widget-heading" data-id="e768f97" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-1e821eb e-con-full cat-cresce e-flex e-con e-child" data-id="1e821eb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-dc750ed cat-manchete elementor-widget elementor-widget-heading" data-id="dc750ed" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/radio-usp/como-fica-o-jornalismo-com-o-avanco-da-ia/" target="_blank">What becomes of journalism as AI advances?</a></h3>				</div>
-				<div class="elementor-element elementor-element-cece882 cat-meta elementor-widget elementor-widget-text-editor" data-id="cece882" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-698f79f cat-meta elementor-widget elementor-widget-text-editor" data-id="698f79f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>AI transforms journalism at every stage; reinventing the profession, together with journalists, is the way to preserve news as a public good.</p>								</div>
-				<div class="elementor-element elementor-element-7957f68 cat-link elementor-widget elementor-widget-heading" data-id="7957f68" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-a519d5a cat-link elementor-widget elementor-widget-heading" data-id="a519d5a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/radio-usp/como-fica-o-jornalismo-com-o-avanco-da-ia/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-1a978ec e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="1a978ec" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-60a7672 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="60a7672" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-0bc6f3c e-con-full cat-item tipo-opiniao e-flex e-con e-child" data-id="0bc6f3c" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-c4dcc85 e-con-full cat-fixa e-flex e-con e-child" data-id="c4dcc85" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-36643da cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="36643da" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-254fdb1 e-con-full cat-item tipo-opiniao e-flex e-con e-child" data-id="254fdb1" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-fa87955 e-con-full cat-fixa e-flex e-con e-child" data-id="fa87955" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0323b98 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="0323b98" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">RÁDIO USP · OBSERVATÓRIO DA INOVAÇÃO</div>				</div>
-				<div class="elementor-element elementor-element-8947b67 cat-rotulo elementor-widget elementor-widget-heading" data-id="8947b67" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-51504bc cat-rotulo elementor-widget elementor-widget-heading" data-id="51504bc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">COLUMN · JUN 2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-c70732c e-con-full cat-cresce e-flex e-con e-child" data-id="c70732c" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-1592492 cat-manchete elementor-widget elementor-widget-heading" data-id="1592492" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-d2e57c8 e-con-full cat-cresce e-flex e-con e-child" data-id="d2e57c8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f33856c cat-manchete elementor-widget elementor-widget-heading" data-id="f33856c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/radio-usp/a-inteligencia-artificial-ainda-nao-esta-pronta-para-substituir-os-professores/" target="_blank">Artificial intelligence is not yet ready to replace teachers</a></h3>				</div>
-				<div class="elementor-element elementor-element-b5e962f cat-meta elementor-widget elementor-widget-text-editor" data-id="b5e962f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-3fa89d4 cat-meta elementor-widget elementor-widget-text-editor" data-id="3fa89d4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Research on AI in education shows unencouraging results; it is up to universities to set guidelines for its use.</p>								</div>
-				<div class="elementor-element elementor-element-3acd1ca cat-link elementor-widget elementor-widget-heading" data-id="3acd1ca" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-b648a7d cat-link elementor-widget elementor-widget-heading" data-id="b648a7d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/radio-usp/a-inteligencia-artificial-ainda-nao-esta-pronta-para-substituir-os-professores/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-83a1266 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="83a1266" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-b35d807 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="b35d807" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-8f2bec9 e-con-full cat-item tipo-opiniao e-flex e-con e-child" data-id="8f2bec9" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-5e745c5 e-con-full cat-fixa e-flex e-con e-child" data-id="5e745c5" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8f1232d cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="8f1232d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-19f0600 e-con-full cat-item tipo-opiniao e-flex e-con e-child" data-id="19f0600" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-64adfc3 e-con-full cat-fixa e-flex e-con e-child" data-id="64adfc3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-88520e5 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="88520e5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">RÁDIO USP · OBSERVATÓRIO DA INOVAÇÃO</div>				</div>
-				<div class="elementor-element elementor-element-582e8f9 cat-rotulo elementor-widget elementor-widget-heading" data-id="582e8f9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-abc2301 cat-rotulo elementor-widget elementor-widget-heading" data-id="abc2301" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">COLUMN · MAR 2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-6347ae9 e-con-full cat-cresce e-flex e-con e-child" data-id="6347ae9" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-397662a cat-manchete elementor-widget elementor-widget-heading" data-id="397662a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-be066e7 e-con-full cat-cresce e-flex e-con e-child" data-id="be066e7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-95be960 cat-manchete elementor-widget elementor-widget-heading" data-id="95be960" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/radio-usp/a-inteligencia-artificial-e-as-criancas/" target="_blank">Artificial intelligence and children</a></h3>				</div>
-				<div class="elementor-element elementor-element-5dbfee1 cat-meta elementor-widget elementor-widget-text-editor" data-id="5dbfee1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-f4ee7f7 cat-meta elementor-widget elementor-widget-text-editor" data-id="f4ee7f7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>The debate on AI should involve the whole of society, yet children, who grow up in a world blended with AI, are left out of the decisions.</p>								</div>
-				<div class="elementor-element elementor-element-28a3de9 cat-link elementor-widget elementor-widget-heading" data-id="28a3de9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-aa8e02e cat-link elementor-widget elementor-widget-heading" data-id="aa8e02e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/radio-usp/a-inteligencia-artificial-e-as-criancas/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-b860035 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="b860035" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-7d7c05a e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="7d7c05a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-668e993 e-con-full cat-item tipo-opiniao e-flex e-con e-child" data-id="668e993" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-a3505e1 e-con-full cat-fixa e-flex e-con e-child" data-id="a3505e1" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e4726ac cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="e4726ac" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-764574a e-con-full cat-item tipo-opiniao e-flex e-con e-child" data-id="764574a" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-a502bbe e-con-full cat-fixa e-flex e-con e-child" data-id="a502bbe" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ddba78b cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="ddba78b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">RÁDIO USP · OBSERVATÓRIO DA INOVAÇÃO</div>				</div>
-				<div class="elementor-element elementor-element-6806e43 cat-rotulo elementor-widget elementor-widget-heading" data-id="6806e43" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-cf4a82e cat-rotulo elementor-widget elementor-widget-heading" data-id="cf4a82e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">COLUMN · AUG 2024</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-be5e697 e-con-full cat-cresce e-flex e-con e-child" data-id="be5e697" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-9c02188 cat-manchete elementor-widget elementor-widget-heading" data-id="9c02188" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-24b29e7 e-con-full cat-cresce e-flex e-con e-child" data-id="24b29e7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-57738c4 cat-manchete elementor-widget elementor-widget-heading" data-id="57738c4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/radio-usp/a-inteligencia-artificial-colocando-em-xeque-a-confiabilidade-da-ciencia/" target="_blank">Artificial intelligence putting the reliability of science in check</a></h3>				</div>
-				<div class="elementor-element elementor-element-e0e8cca cat-meta elementor-widget elementor-widget-text-editor" data-id="e0e8cca" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-765dcba cat-meta elementor-widget elementor-widget-text-editor" data-id="765dcba" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>AI-generated errors and fraud are already appearing in scientific papers; universities, funding agencies and journals need to curb the practice.</p>								</div>
-				<div class="elementor-element elementor-element-56ab9ec cat-link elementor-widget elementor-widget-heading" data-id="56ab9ec" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-15f18e7 cat-link elementor-widget elementor-widget-heading" data-id="15f18e7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/radio-usp/a-inteligencia-artificial-colocando-em-xeque-a-confiabilidade-da-ciencia/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-f778449 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="f778449" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-14e9eeb e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="14e9eeb" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-e2a2b25 e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="e2a2b25" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-725317e e-con-full cat-fixa e-flex e-con e-child" data-id="725317e" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-c161845 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="c161845" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-1a348b6 e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="1a348b6" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-1bfef2e e-con-full cat-fixa e-flex e-con e-child" data-id="1bfef2e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-cb551d8 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="cb551d8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">JORNAL O SÃO PAULO</div>				</div>
-				<div class="elementor-element elementor-element-5fb60fe cat-rotulo elementor-widget elementor-widget-heading" data-id="5fb60fe" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-9991dde cat-rotulo elementor-widget elementor-widget-heading" data-id="9991dde" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">INTERVIEW · SEP 2023</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-b4f8003 e-con-full cat-cresce e-flex e-con e-child" data-id="b4f8003" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-9eed2fc cat-manchete elementor-widget elementor-widget-heading" data-id="9eed2fc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-106a20c e-con-full cat-cresce e-flex e-con e-child" data-id="106a20c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e76613d cat-manchete elementor-widget elementor-widget-heading" data-id="e76613d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://osaopaulo.org.br/pascom/glauco-arbix-use-e-extraia-o-maximo-que-voce-puder-da-ia-mas-com-responsabilidade/" target="_blank">‘Use AI and get the most you can out of it, but responsibly’</a></h3>				</div>
-				<div class="elementor-element elementor-element-1cd5057 cat-meta elementor-widget elementor-widget-text-editor" data-id="1cd5057" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-1157313 cat-meta elementor-widget elementor-widget-text-editor" data-id="1157313" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>AI is the most powerful and versatile technology of our time and should be used as an assistant that requires human checking, not as an infallible authority.</p>								</div>
-				<div class="elementor-element elementor-element-e9fccb7 cat-link elementor-widget elementor-widget-heading" data-id="e9fccb7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-7bc9216 cat-link elementor-widget elementor-widget-heading" data-id="7bc9216" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://osaopaulo.org.br/pascom/glauco-arbix-use-e-extraia-o-maximo-que-voce-puder-da-ia-mas-com-responsabilidade/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-4f7ae2d e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="4f7ae2d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-9e44ffd e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="9e44ffd" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-2d50efb e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="2d50efb" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-7a3aeda e-con-full cat-fixa e-flex e-con e-child" data-id="7a3aeda" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-ee5d0b4 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="ee5d0b4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-dfc17c2 e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="dfc17c2" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-61f28c1 e-con-full cat-fixa e-flex e-con e-child" data-id="61f28c1" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-bb15dd2 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="bb15dd2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">VALOR ECONÔMICO</div>				</div>
-				<div class="elementor-element elementor-element-d36d7b0 cat-rotulo elementor-widget elementor-widget-heading" data-id="d36d7b0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-4ce4ac7 cat-rotulo elementor-widget elementor-widget-heading" data-id="4ce4ac7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">INTERVIEW · AUG 2023</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-c5fe1f9 e-con-full cat-cresce e-flex e-con e-child" data-id="c5fe1f9" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-f907988 cat-manchete elementor-widget elementor-widget-heading" data-id="f907988" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-95a3e5d e-con-full cat-cresce e-flex e-con e-child" data-id="95a3e5d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-bd2bf80 cat-manchete elementor-widget elementor-widget-heading" data-id="bd2bf80" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://valor.globo.com/inovacao/noticia/2023/08/02/a-inteligencia-artificial-e-crucial-para-o-ambiente-de-desenvolvimento-diz-glauco-arbix.ghtml" target="_blank">Artificial intelligence is crucial to the development environment, says Glauco Arbix</a></h3>				</div>
-				<div class="elementor-element elementor-element-72011fb cat-meta elementor-widget elementor-widget-text-editor" data-id="72011fb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-683a5ed cat-meta elementor-widget elementor-widget-text-editor" data-id="683a5ed" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Interview on the role of AI in the country&#8217;s development and economic future.</p>								</div>
-				<div class="elementor-element elementor-element-02aad4a cat-link elementor-widget elementor-widget-heading" data-id="02aad4a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-9a20a13 cat-link elementor-widget elementor-widget-heading" data-id="9a20a13" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://valor.globo.com/inovacao/noticia/2023/08/02/a-inteligencia-artificial-e-crucial-para-o-ambiente-de-desenvolvimento-diz-glauco-arbix.ghtml" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-e50905b e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="e50905b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-3219121 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="3219121" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-febda01 e-con-full cat-item tipo-reportagem e-flex e-con e-child" data-id="febda01" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-071ec00 e-con-full cat-fixa e-flex e-con e-child" data-id="071ec00" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-095ee33 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="095ee33" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-52c3d52 e-con-full cat-item tipo-reportagem e-flex e-con e-child" data-id="52c3d52" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-43126fb e-con-full cat-fixa e-flex e-con e-child" data-id="43126fb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d8da36e cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="d8da36e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">VEJA SÃO PAULO</div>				</div>
-				<div class="elementor-element elementor-element-3fd15c1 cat-rotulo elementor-widget elementor-widget-heading" data-id="3fd15c1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-ad8e9bf cat-rotulo elementor-widget elementor-widget-heading" data-id="ad8e9bf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">NEWS REPORT · JUL 2023</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-22c89ba e-con-full cat-cresce e-flex e-con e-child" data-id="22c89ba" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-782a024 cat-manchete elementor-widget elementor-widget-heading" data-id="782a024" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-8cee9f6 e-con-full cat-cresce e-flex e-con e-child" data-id="8cee9f6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ff1470b cat-manchete elementor-widget elementor-widget-heading" data-id="ff1470b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://vejasp.abril.com.br/cidades/chatgpt-inteligencia-artificial-escolas-sao-paulo" target="_blank">The arrival of ChatGPT in schools</a></h3>				</div>
-				<div class="elementor-element elementor-element-f575274 cat-meta elementor-widget elementor-widget-text-editor" data-id="f575274" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-30660ca cat-meta elementor-widget elementor-widget-text-editor" data-id="30660ca" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>“ChatGPT has no commitment to truth and accuracy”: built to generate coherent answers, not to check facts, Arbix tells the reporter.</p>								</div>
-				<div class="elementor-element elementor-element-551e6be cat-link elementor-widget elementor-widget-heading" data-id="551e6be" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-6da9284 cat-link elementor-widget elementor-widget-heading" data-id="6da9284" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://vejasp.abril.com.br/cidades/chatgpt-inteligencia-artificial-escolas-sao-paulo" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-c704497 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="c704497" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-132bdcf e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="132bdcf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-1083ecb e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="1083ecb" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-101227e e-con-full cat-fixa e-flex e-con e-child" data-id="101227e" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-1139918 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="1139918" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-23d9408 e-con-full cat-item tipo-entrevista e-flex e-con e-child" data-id="23d9408" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-b82eb52 e-con-full cat-fixa e-flex e-con e-child" data-id="b82eb52" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-049bb49 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="049bb49" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">BBC NEWS BRASIL</div>				</div>
-				<div class="elementor-element elementor-element-690af97 cat-rotulo elementor-widget elementor-widget-heading" data-id="690af97" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-a85d7e7 cat-rotulo elementor-widget elementor-widget-heading" data-id="a85d7e7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">INTERVIEW · JUL 2023</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-f8a5541 e-con-full cat-cresce e-flex e-con e-child" data-id="f8a5541" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-fcaa2cf cat-manchete elementor-widget elementor-widget-heading" data-id="fcaa2cf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-28be805 e-con-full cat-cresce e-flex e-con e-child" data-id="28be805" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8d063e2 cat-manchete elementor-widget elementor-widget-heading" data-id="8d063e2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://understandingai.iea.usp.br/a-inteligencia-artificial-pode-trazer-pessoas-mortas-de-volta-a-vida/" target="_blank">Can artificial intelligence bring dead people back to life?</a></h3>				</div>
-				<div class="elementor-element elementor-element-4dbdc45 cat-meta elementor-widget elementor-widget-text-editor" data-id="4dbdc45" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-274f5be cat-meta elementor-widget elementor-widget-text-editor" data-id="274f5be" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Privacy, consent, memory and the moral limits of these technologies (interview republished by IEA-USP).</p>								</div>
-				<div class="elementor-element elementor-element-80287d0 cat-link elementor-widget elementor-widget-heading" data-id="80287d0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-9cd5b2e cat-link elementor-widget elementor-widget-heading" data-id="9cd5b2e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://understandingai.iea.usp.br/a-inteligencia-artificial-pode-trazer-pessoas-mortas-de-volta-a-vida/" target="_blank">READ ARTICLE →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-3db7e0a e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="3db7e0a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-61a05e5 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="61a05e5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-289e737 e-con-full cat-item tipo-audio e-flex e-con e-child" data-id="289e737" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-1c393cc e-con-full cat-fixa e-flex e-con e-child" data-id="1c393cc" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-01ad277 cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="01ad277" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-25cf430 e-con-full cat-item tipo-audio e-flex e-con e-child" data-id="25cf430" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-26d5386 e-con-full cat-fixa e-flex e-con e-child" data-id="26d5386" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-59bb9dd cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="59bb9dd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">SBT NEWS</div>				</div>
-				<div class="elementor-element elementor-element-d0aa959 cat-rotulo elementor-widget elementor-widget-heading" data-id="d0aa959" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-8123280 cat-rotulo elementor-widget elementor-widget-heading" data-id="8123280" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PODCAST / VÍDEO · JUL 2023</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-c9fcda9 e-con-full cat-cresce e-flex e-con e-child" data-id="c9fcda9" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-9411c7a cat-manchete elementor-widget elementor-widget-heading" data-id="9411c7a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-bc311f5 e-con-full cat-cresce e-flex e-con e-child" data-id="bc311f5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8367f75 cat-manchete elementor-widget elementor-widget-heading" data-id="8367f75" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://www.youtube.com/watch?v=fI7fMFtr9KI" target="_blank">Artificial intelligence brings the dead, such as Elis Regina, back to life; understand the risks</a></h3>				</div>
-				<div class="elementor-element elementor-element-1ffec03 cat-meta elementor-widget elementor-widget-text-editor" data-id="1ffec03" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-984d611 cat-meta elementor-widget elementor-widget-text-editor" data-id="984d611" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Live participation in the debate on AI “resurrections”, their applications and implications for society.</p>								</div>
-				<div class="elementor-element elementor-element-886998c cat-link elementor-widget elementor-widget-heading" data-id="886998c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-9f805d3 cat-link elementor-widget elementor-widget-heading" data-id="9f805d3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.youtube.com/watch?v=fI7fMFtr9KI" target="_blank">WATCH OR LISTEN →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-444e954 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="444e954" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-110a6ed e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="110a6ed" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-b928d3d e-con-full cat-item tipo-audio e-flex e-con e-child" data-id="b928d3d" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-169305a e-con-full cat-fixa e-flex e-con e-child" data-id="169305a" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e1453be cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="e1453be" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-1fe2a0a e-con-full cat-item tipo-audio e-flex e-con e-child" data-id="1fe2a0a" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-e39ffb6 e-con-full cat-fixa e-flex e-con e-child" data-id="e39ffb6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a84974e cat-rotulo cat-rotulo-escuro elementor-widget elementor-widget-heading" data-id="a84974e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TV GLOBO · CONVERSA COM BIAL</div>				</div>
-				<div class="elementor-element elementor-element-71bcc8b cat-rotulo elementor-widget elementor-widget-heading" data-id="71bcc8b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-890c074 cat-rotulo elementor-widget elementor-widget-heading" data-id="890c074" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PODCAST / VÍDEO · JUL 2019</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-4a04c3b e-con-full cat-cresce e-flex e-con e-child" data-id="4a04c3b" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-17f20a9 cat-manchete elementor-widget elementor-widget-heading" data-id="17f20a9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-d72f87c e-con-full cat-cresce e-flex e-con e-child" data-id="d72f87c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d382eed cat-manchete elementor-widget elementor-widget-heading" data-id="d382eed" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default">Artificial intelligence and its risks, with Nick Bostrom, Stevens Rehen and Glauco Arbix</h3>				</div>
-				<div class="elementor-element elementor-element-fcb8580 cat-meta elementor-widget elementor-widget-text-editor" data-id="fcb8580" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-5eca401 cat-meta elementor-widget elementor-widget-text-editor" data-id="5eca401" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>In the studio, Arbix comments on Pedro Bial&#8217;s interview with the philosopher Nick Bostrom in Oxford: “The main question is what we want.”</p>								</div>
 				</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-fe2764b e-flex e-con-boxed e-con e-parent" data-id="fe2764b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-fd4c641 e-flex e-con-boxed e-con e-parent" data-id="fd4c641" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-1a8ce01 e-con-full e-flex e-con e-child" data-id="1a8ce01" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-9e338e9 elementor-widget elementor-widget-image" data-id="9e338e9" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-b5a134e e-con-full e-flex e-con e-child" data-id="b5a134e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0bac1cd elementor-widget elementor-widget-image" data-id="0bac1cd" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img decoding="async" width="800" height="450" src="../../wp-content/uploads/2026/09/Logo-Negativa-USP-1024x576.png" class="attachment-large size-large wp-image-1829" alt="" srcset="../../wp-content/uploads/2026/09/Logo-Negativa-USP-1024x576.png 1024w, ../../wp-content/uploads/2026/09/Logo-Negativa-USP-300x169.png 300w, ../../wp-content/uploads/2026/09/Logo-Negativa-USP-768x432.png 768w, ../../wp-content/uploads/2026/09/Logo-Negativa-USP-1536x864.png 1536w, ../../wp-content/uploads/2026/09/Logo-Negativa-USP-2048x1152.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
-				<div class="elementor-element elementor-element-35e5c3b elementor-widget elementor-widget-heading" data-id="35e5c3b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-16bc7f5 elementor-widget elementor-widget-heading" data-id="16bc7f5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">This project is a partnership between</h2>				</div>
-		<div class="elementor-element elementor-element-30da0a1 e-con-full e-flex e-con e-child" data-id="30da0a1" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-a2ef3a9 elementor-widget elementor-widget-image" data-id="a2ef3a9" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-f0daa3b e-con-full e-flex e-con e-child" data-id="f0daa3b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-04d7229 elementor-widget elementor-widget-image" data-id="04d7229" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img decoding="async" width="300" height="126" src="../../wp-content/uploads/2026/05/usp-logo-eps-branco-300x126.png" class="attachment-medium size-medium wp-image-809" alt="" srcset="../../wp-content/uploads/2026/05/usp-logo-eps-branco-300x126.png 300w, ../../wp-content/uploads/2026/05/usp-logo-eps-branco-768x324.png 768w, ../../wp-content/uploads/2026/05/usp-logo-eps-branco.png 800w" sizes="(max-width: 300px) 100vw, 300px" />															</div>
-				<div class="elementor-element elementor-element-3cea707 elementor-widget elementor-widget-heading" data-id="3cea707" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-659bdf4 elementor-widget elementor-widget-heading" data-id="659bdf4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">  and</h2>				</div>
-				<div class="elementor-element elementor-element-472ad20 elementor-widget elementor-widget-image" data-id="472ad20" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-527d800 elementor-widget elementor-widget-image" data-id="527d800" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="300" height="125" src="../../wp-content/uploads/2026/06/Google-logo-300x125.png" class="attachment-medium size-medium wp-image-1545" alt="" srcset="../../wp-content/uploads/2026/06/Google-logo-300x125.png 300w, ../../wp-content/uploads/2026/06/Google-logo-1024x427.png 1024w, ../../wp-content/uploads/2026/06/Google-logo-768x320.png 768w, ../../wp-content/uploads/2026/06/Google-logo-1536x640.png 1536w, ../../wp-content/uploads/2026/06/Google-logo-2048x853.png 2048w" sizes="(max-width: 300px) 100vw, 300px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-3403bf3 e-con-full e-flex e-con e-child" data-id="3403bf3" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-00a9376 cat-menu elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="00a9376" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-element elementor-element-66191cb e-con-full e-flex e-con e-child" data-id="66191cb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f8bc9f1 cat-menu elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="f8bc9f1" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
 											<a href="../sobre/index.html">
@@ -853,6 +861,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 											<a href="../pessoas/index.html">
 
 											<span class="elementor-icon-list-text">PEOPLE</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="../conselho/index.html">
+
+											<span class="elementor-icon-list-text">ADVISORY BOARD</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
@@ -887,35 +901,35 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-		<div class="elementor-element elementor-element-9cb88ad e-con-full e-flex e-con e-child" data-id="9cb88ad" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-75673ce e-con-full e-flex e-con e-child" data-id="75673ce" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-f5e5535 elementor-view-default elementor-widget elementor-widget-icon" data-id="f5e5535" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-0ae71de e-con-full e-flex e-con e-child" data-id="0ae71de" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-5c45b8c e-con-full e-flex e-con e-child" data-id="5c45b8c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8616f8c elementor-view-default elementor-widget elementor-widget-icon" data-id="8616f8c" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-5e74094 elementor-view-default elementor-widget elementor-widget-icon" data-id="5e74094" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-699f4e5 elementor-view-default elementor-widget elementor-widget-icon" data-id="699f4e5" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-4fd189f elementor-view-default elementor-widget elementor-widget-icon" data-id="4fd189f" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-a282718 elementor-view-default elementor-widget elementor-widget-icon" data-id="a282718" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-c88b1c6 elementor-view-default elementor-widget elementor-widget-icon" data-id="c88b1c6" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-1952ee7 elementor-view-default elementor-widget elementor-widget-icon" data-id="1952ee7" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-envelope" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>			</a>
 		</div>
 						</div>
 				</div>
-		<div class="elementor-element elementor-element-4eec164 e-con-full e-flex e-con e-child" data-id="4eec164" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8c697ba elementor-widget elementor-widget-text-editor" data-id="8c697ba" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-caa84e6 e-con-full e-flex e-con e-child" data-id="caa84e6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ad121e4 elementor-widget elementor-widget-text-editor" data-id="ad121e4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Design by <a href="https://www.victoriaflaksbaum.com/">Victoria Flaksbaum</a></p>								</div>
 				</div>
 				</div>
