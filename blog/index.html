@@ -183,6 +183,18 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* pessoas: cards com a tipografia da designer; aqui só o que ela não tinha (instituição, links, ficha, biografia) */
 		body .elementor .cat-foto.foto-martelada::before{background-image:inherit} /* efeito "martelado" no hover sem precisar de uma classe pessoa-N por foto */
 		body .elementor .cat-pessoa .elementor-heading-title a:hover{color:var(--cat-suave)}
+		/* pessoas: cards centrados, colunas largas e fileiras incompletas no meio da página, sem texto justificado */
+		body .elementor .cat-fileira-pessoas>.e-con-inner,body .elementor .cat-fileira-pessoas{align-items:center}
+		body .elementor .cat-fileira-pessoas>.cat-cab,body .elementor .cat-fileira-pessoas>.e-con-inner>.cat-cab{text-align:center;align-self:stretch}
+		body .elementor .cat-grade-pessoas,body .elementor .cat-grade-pessoas>.e-con-inner{display:flex!important;flex-wrap:wrap;justify-content:center;gap:80px 48px!important;width:100%}
+		body .elementor .cat-grade-pessoas .cat-pessoa{flex:0 0 calc((100% - 4*48px)/5)!important;width:auto!important;max-width:calc((100% - 4*48px)/5);align-items:center;text-align:center}
+		body .elementor .cat-pessoa>.e-con-inner{align-items:center}
+		body .elementor .cat-pessoa .elementor-widget{align-self:stretch;text-align:center}
+		body .elementor .cat-pessoa .elementor-heading-title,body .elementor .cat-pessoa p{text-align:center!important;word-spacing:normal!important}
+		body .elementor .cat-pessoa .elementor-widget-image img{margin:0 auto 10px}
+		body .elementor .cat-pessoa .e-con,body .elementor .cat-pessoa ul,body .elementor .cat-pessoa .elementor-icon-list-items{justify-content:center!important}
+		@media(max-width:1024px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:calc((100% - 2*48px)/3)!important;max-width:calc((100% - 2*48px)/3)}}
+		@media(max-width:767px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:100%!important;max-width:320px}}
 		/* ritmo dos cards: foto redonda com anel de textura e filete claro, nome compacto, colunas pares escalonadas */
 		body .elementor .e-con.cat-foto-anel{border-radius:50%;aspect-ratio:1/1;margin-bottom:14px}
 		body .elementor .e-con.cat-foto-anel .cat-foto{border-radius:50%;box-shadow:0 0 0 2px var(--cat-fundo)}
@@ -303,7 +315,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					}
 				}
 			</style>
-			<style id="wp-custom-css">
+			<link rel="icon" href="../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-150x150.png" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<meta name="msapplication-TileImage" content="../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<style id="wp-custom-css">
 .card-integrante {
     aspect-ratio: 1 / 1 !important;
     width: 100% !important;
@@ -493,244 +509,244 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-29c778c cat-idiomas-box elementor-widget elementor-widget-html" data-id="29c778c" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-979fcb8 cat-idiomas-box elementor-widget elementor-widget-html" data-id="979fcb8" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Idioma"><a href="index.html" lang="pt" hreflang="pt" class="ativo" aria-current="true">PT</a><a href="../en/blog/index.html" lang="en" hreflang="en">EN</a><a href="../es/blog/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-550710d8 e-con-full e-flex e-con e-parent" data-id="550710d8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-660972a e-flex e-con-boxed e-con e-child" data-id="660972a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-dfd0460 e-flex e-con-boxed e-con e-child" data-id="dfd0460" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-399167e e-con-full e-flex e-con e-child" data-id="399167e" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-b053314 elementor-widget elementor-widget-html" data-id="b053314" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+		<div class="elementor-element elementor-element-07b2161 e-con-full e-flex e-con e-child" data-id="07b2161" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9c6170f elementor-widget elementor-widget-html" data-id="9c6170f" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-abas" aria-label="Grupos"><a href="#publicacoes">NOTÍCIAS</a><a href="#relatorios">RELATÓRIOS DE ATIVIDADES</a><a href="#comunicacoes">COMUNICAÇÕES INTERNAS</a></nav>				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-4c8608c e-flex e-con-boxed e-con e-child" data-id="4c8608c" data-element_type="container" data-e-type="container" id="publicacoes-titulo" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-7289998 e-flex e-con-boxed e-con e-child" data-id="7289998" data-element_type="container" data-e-type="container" id="publicacoes-titulo" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-dd3f7d1 e-con-full e-flex e-con e-child" data-id="dd3f7d1" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-af43332 elementor-widget elementor-widget-heading" data-id="af43332" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-a3dcb61 e-con-full e-flex e-con e-child" data-id="a3dcb61" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8dbf95f elementor-widget elementor-widget-heading" data-id="8dbf95f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">NOTÍCIAS</h2>				</div>
 				</div>
-		<div class="elementor-element elementor-element-a11cce3 e-con-full e-flex e-con e-child" data-id="a11cce3" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-86d91e8 elementor-widget elementor-widget-text-editor" data-id="86d91e8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-021a99c e-con-full e-flex e-con e-child" data-id="021a99c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7c75596 elementor-widget elementor-widget-text-editor" data-id="7c75596" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Textos e notícias da Cátedra.</p>								</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-28e845c e-con-boxed cat-noticias e-flex e-con e-child" data-id="28e845c" data-element_type="container" data-e-type="container" id="publicacoes">
+		<div class="elementor-element elementor-element-98ac336 e-con-boxed cat-noticias e-flex e-con e-child" data-id="98ac336" data-element_type="container" data-e-type="container" id="publicacoes">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-0097d3b e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="0097d3b" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-185f492 e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="185f492" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8bd71c0 cat-mes-textura cat-tex-1 elementor-widget elementor-widget-heading" data-id="8bd71c0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-5c78775 e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="5c78775" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-af54cc7 e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="af54cc7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3048bc9 cat-mes-textura cat-tex-1 elementor-widget elementor-widget-heading" data-id="3048bc9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">OUT</div>				</div>
-				<div class="elementor-element elementor-element-7fcdd3e cat-rotulo elementor-widget elementor-widget-heading" data-id="7fcdd3e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-9b3d4c6 cat-rotulo elementor-widget elementor-widget-heading" data-id="9b3d4c6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-199306e e-con-full cat-cresce e-flex e-con e-child" data-id="199306e" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-137d4a2 cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="137d4a2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-cfdbc4c e-con-full cat-cresce e-flex e-con e-child" data-id="cfdbc4c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5103703 cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="5103703" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/pesquisa/oportunidades-pesquisa/google-2" target="_blank">Bolsas de iniciação científica e doutorado</a></h3>				</div>
-				<div class="elementor-element elementor-element-7e949b0 cat-meta elementor-widget elementor-widget-text-editor" data-id="7e949b0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-8216485 cat-meta elementor-widget elementor-widget-text-editor" data-id="8216485" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Edital IEA/USP 28/2026 abre uma bolsa de iniciação científica e uma de doutorado. Inscrições de 2 a 18 de outubro.</p>								</div>
-				<div class="elementor-element elementor-element-59c39e4 cat-link elementor-widget elementor-widget-heading" data-id="59c39e4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-90c00a7 cat-link elementor-widget elementor-widget-heading" data-id="90c00a7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/pesquisa/oportunidades-pesquisa/google-2" target="_blank">LINK →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-f40a114 e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="f40a114" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-3d16534 e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="3d16534" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-c25bd7a cat-mes-textura cat-tex-2 elementor-widget elementor-widget-heading" data-id="c25bd7a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-a109a0c e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="a109a0c" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-7f93277 e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="7f93277" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c47b399 cat-mes-textura cat-tex-2 elementor-widget elementor-widget-heading" data-id="c47b399" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">JUN</div>				</div>
-				<div class="elementor-element elementor-element-c2d7417 cat-rotulo elementor-widget elementor-widget-heading" data-id="c2d7417" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-32ef20c cat-rotulo elementor-widget elementor-widget-heading" data-id="32ef20c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-5a83407 e-con-full cat-cresce e-flex e-con e-child" data-id="5a83407" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-c37a7bd cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="c37a7bd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-60608bd e-con-full cat-cresce e-flex e-con e-child" data-id="60608bd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a02ffbf cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="a02ffbf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/pesquisa/oportunidades-pesquisa/google" target="_blank">Bolsa de pós-doutorado em IA Responsável</a></h3>				</div>
-				<div class="elementor-element elementor-element-655aa6b cat-meta elementor-widget elementor-widget-text-editor" data-id="655aa6b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-dcfea81 cat-meta elementor-widget elementor-widget-text-editor" data-id="dcfea81" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Edital IEA/USP 23/2026: uma vaga de 12 meses com dedicação exclusiva à pesquisa. Inscrições de 25 de junho a 19 de julho.</p>								</div>
-				<div class="elementor-element elementor-element-2e59df7 cat-link elementor-widget elementor-widget-heading" data-id="2e59df7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-5faa186 cat-link elementor-widget elementor-widget-heading" data-id="5faa186" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/pesquisa/oportunidades-pesquisa/google" target="_blank">LINK →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-00bf2b2 e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="00bf2b2" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-65e4992 e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="65e4992" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-dc58476 cat-mes-textura cat-tex-3 elementor-widget elementor-widget-heading" data-id="dc58476" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-c816b22 e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="c816b22" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-044131d e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="044131d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1503ae9 cat-mes-textura cat-tex-3 elementor-widget elementor-widget-heading" data-id="1503ae9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">MAR</div>				</div>
-				<div class="elementor-element elementor-element-ad93e34 cat-rotulo elementor-widget elementor-widget-heading" data-id="ad93e34" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-6050044 cat-rotulo elementor-widget elementor-widget-heading" data-id="6050044" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-ed9100b e-con-full cat-cresce e-flex e-con e-child" data-id="ed9100b" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-ab4ed21 cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="ab4ed21" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-fec86b4 e-con-full cat-cresce e-flex e-con e-child" data-id="fec86b4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-fbde738 cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="fbde738" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/atualidades/a-regulamentacao-esta-na-base-dos-problemas-apresentados-pela-utilizacao-da-ia/" target="_blank">Livro IA na Encruzilhada</a></h3>				</div>
-				<div class="elementor-element elementor-element-da13c2a cat-meta elementor-widget elementor-widget-text-editor" data-id="da13c2a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-86da68f cat-meta elementor-widget elementor-widget-text-editor" data-id="86da68f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Glauco Arbix e Rodrigo Brandão organizam o volume, com 21 pesquisadores da USP, sobre geopolítica, regulação e governança da IA.</p>								</div>
-				<div class="elementor-element elementor-element-e4904a2 cat-link elementor-widget elementor-widget-heading" data-id="e4904a2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-22dd3c6 cat-link elementor-widget elementor-widget-heading" data-id="22dd3c6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://jornal.usp.br/atualidades/a-regulamentacao-esta-na-base-dos-problemas-apresentados-pela-utilizacao-da-ia/" target="_blank">LINK →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-887ef51 e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="887ef51" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-1ee33ca e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="1ee33ca" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e7b3bec cat-mes-textura cat-tex-4 elementor-widget elementor-widget-heading" data-id="e7b3bec" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-0a52a0e e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="0a52a0e" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-cf55536 e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="cf55536" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0cbe6f3 cat-mes-textura cat-tex-4 elementor-widget elementor-widget-heading" data-id="0cbe6f3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">MAR</div>				</div>
-				<div class="elementor-element elementor-element-0cf8f6f cat-rotulo elementor-widget elementor-widget-heading" data-id="0cf8f6f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-5c99917 cat-rotulo elementor-widget elementor-widget-heading" data-id="5c99917" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-af5fa7f e-con-full cat-cresce e-flex e-con e-child" data-id="af5fa7f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-0759979 cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="0759979" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-3d69159 e-con-full cat-cresce e-flex e-con e-child" data-id="3d69159" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d7be7f5 cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="d7be7f5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/midiateca/video/videos-2026/ia-e-confianca-1" target="_blank">Seminário IA e Confiança</a></h3>				</div>
-				<div class="elementor-element elementor-element-af8bd92 cat-meta elementor-widget elementor-widget-text-editor" data-id="af8bd92" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-b00ae83 cat-meta elementor-widget elementor-widget-text-editor" data-id="b00ae83" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>David Levi (Stanford HAI) e Lucas Boscaini (Google) discutem por que a confiança humana falha diante de sistemas algorítmicos.</p>								</div>
-				<div class="elementor-element elementor-element-c77f12b cat-link elementor-widget elementor-widget-heading" data-id="c77f12b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-4238a55 cat-link elementor-widget elementor-widget-heading" data-id="4238a55" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/midiateca/video/videos-2026/ia-e-confianca-1" target="_blank">LINK →</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-66f7c63 e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="66f7c63" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-f3d04a3 e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="f3d04a3" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-fc043e7 cat-mes-textura cat-tex-5 elementor-widget elementor-widget-heading" data-id="fc043e7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-41aece2 e-con-full cat-noticia cat-fixa e-flex e-con e-child" data-id="41aece2" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-6ac11ab e-con-full cat-noticia-data cat-fixa e-flex e-con e-child" data-id="6ac11ab" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ddc21af cat-mes-textura cat-tex-5 elementor-widget elementor-widget-heading" data-id="ddc21af" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">DEZ</div>				</div>
-				<div class="elementor-element elementor-element-d38d967 cat-rotulo elementor-widget elementor-widget-heading" data-id="d38d967" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-a3d5573 cat-rotulo elementor-widget elementor-widget-heading" data-id="a3d5573" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-8592e56 e-con-full cat-cresce e-flex e-con e-child" data-id="8592e56" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-1465fce cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="1465fce" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9fbab8d e-con-full cat-cresce e-flex e-con e-child" data-id="9fbab8d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-b7bd8f6 cat-noticia-titulo elementor-widget elementor-widget-heading" data-id="b7bd8f6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/noticias/usp-google-catedra-ia-responsavel" target="_blank">USP e Google lançam a Cátedra IA Responsável</a></h3>				</div>
-				<div class="elementor-element elementor-element-5fbcd1c cat-meta elementor-widget elementor-widget-text-editor" data-id="5fbcd1c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-b7072a4 cat-meta elementor-widget elementor-widget-text-editor" data-id="b7072a4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Cerimônia na Sala do Conselho Universitário marca o início da parceria e a posse de Carlos Américo Pacheco como primeiro titular.</p>								</div>
-				<div class="elementor-element elementor-element-e8945e8 cat-link elementor-widget elementor-widget-heading" data-id="e8945e8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-2f6c061 cat-link elementor-widget elementor-widget-heading" data-id="2f6c061" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.iea.usp.br/noticias/usp-google-catedra-ia-responsavel" target="_blank">LINK →</a></div>				</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-09826f8 e-flex e-con-boxed e-con e-child" data-id="09826f8" data-element_type="container" data-e-type="container" id="relatorios" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-5a8187a e-flex e-con-boxed e-con e-child" data-id="5a8187a" data-element_type="container" data-e-type="container" id="relatorios" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-713b9a5 e-con-full e-flex e-con e-child" data-id="713b9a5" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-6690126 elementor-widget elementor-widget-heading" data-id="6690126" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-984bc49 e-con-full e-flex e-con e-child" data-id="984bc49" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e9f4c23 elementor-widget elementor-widget-heading" data-id="e9f4c23" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">RELATÓRIOS DE ATIVIDADES</h2>				</div>
 				</div>
-		<div class="elementor-element elementor-element-3373f09 e-con-full e-flex e-con e-child" data-id="3373f09" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-cd4feae elementor-widget elementor-widget-text-editor" data-id="cd4feae" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-7139ebc e-con-full e-flex e-con e-child" data-id="7139ebc" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-83e58ca elementor-widget elementor-widget-text-editor" data-id="83e58ca" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Prestação de contas periódica da Cátedra. A produção de pesquisa fica no Acervo.</p>								</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-ebf9ad1 e-con-full cat-acervo-lista cat-central e-flex e-con e-child" data-id="ebf9ad1" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-6aa61e7 e-con-full cat-tabela-cab e-flex e-con e-child" data-id="6aa61e7" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-49416ff e-con-full cat-fixa e-flex e-con e-child" data-id="49416ff" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-580849e cat-cab elementor-widget elementor-widget-heading" data-id="580849e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-bf5a6ea e-con-full cat-acervo-lista cat-central e-flex e-con e-child" data-id="bf5a6ea" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-4c400eb e-con-full cat-tabela-cab e-flex e-con e-child" data-id="4c400eb" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-9fd7892 e-con-full cat-fixa e-flex e-con e-child" data-id="9fd7892" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-cc45ffc cat-cab elementor-widget elementor-widget-heading" data-id="cc45ffc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TIPO</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-e90e728 e-con-full cat-cresce e-flex e-con e-child" data-id="e90e728" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-114d667 cat-cab elementor-widget elementor-widget-heading" data-id="114d667" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-bddae0e e-con-full cat-cresce e-flex e-con e-child" data-id="bddae0e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-40902ab cat-cab elementor-widget elementor-widget-heading" data-id="40902ab" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TÍTULO</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-46e4afd e-con-full cat-fixa e-flex e-con e-child" data-id="46e4afd" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-3b7be13 cat-cab elementor-widget elementor-widget-heading" data-id="3b7be13" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-a4f62b5 e-con-full cat-fixa e-flex e-con e-child" data-id="a4f62b5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e665942 cat-cab elementor-widget elementor-widget-heading" data-id="e665942" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ANO</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-cff3497 e-con-full cat-fixa e-flex e-con e-child" data-id="cff3497" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-1f87f83 e-con-full cat-fixa e-flex e-con e-child" data-id="1f87f83" data-element_type="container" data-e-type="container">
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-b1d5fef e-con-full cat-linha cat-item tipo-anual e-flex e-con e-child" data-id="b1d5fef" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-0dbbb1f e-con-full cat-fixa e-flex e-con e-child" data-id="0dbbb1f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-ae5f8ff cat-tag elementor-widget elementor-widget-heading" data-id="ae5f8ff" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-47080e0 e-con-full cat-linha cat-item tipo-anual e-flex e-con e-child" data-id="47080e0" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-117fdc4 e-con-full cat-fixa e-flex e-con e-child" data-id="117fdc4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e295bb0 cat-tag elementor-widget elementor-widget-heading" data-id="e295bb0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ANUAL</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-8b852f7 e-con-full cat-cresce e-flex e-con e-child" data-id="8b852f7" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-016663a cat-item-titulo elementor-widget elementor-widget-heading" data-id="016663a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-f137f25 e-con-full cat-cresce e-flex e-con e-child" data-id="f137f25" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d70c2f8 cat-item-titulo elementor-widget elementor-widget-heading" data-id="d70c2f8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#">Relatório anual de atividades</a></h3>				</div>
-				<div class="elementor-element elementor-element-0324c07 cat-meta elementor-widget elementor-widget-text-editor" data-id="0324c07" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-04da47e cat-meta elementor-widget elementor-widget-text-editor" data-id="04da47e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Período coberto</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-ec673a3 e-con-full cat-fixa e-flex e-con e-child" data-id="ec673a3" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-12e34f2 cat-ano elementor-widget elementor-widget-heading" data-id="12e34f2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-e3fa55b e-con-full cat-fixa e-flex e-con e-child" data-id="e3fa55b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-03b1fb2 cat-ano elementor-widget elementor-widget-heading" data-id="03b1fb2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-cbddc45 e-con-full cat-fixa e-flex e-con e-child" data-id="cbddc45" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-594f298 cat-link elementor-widget elementor-widget-heading" data-id="594f298" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-b50391f e-con-full cat-fixa e-flex e-con e-child" data-id="b50391f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-fb45b94 cat-link elementor-widget elementor-widget-heading" data-id="fb45b94" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="#">PDF ↓</a></div>				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-0bcef0e e-con-full cat-linha cat-item tipo-semestral e-flex e-con e-child" data-id="0bcef0e" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-6c4eee9 e-con-full cat-fixa e-flex e-con e-child" data-id="6c4eee9" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-86197ca cat-tag elementor-widget elementor-widget-heading" data-id="86197ca" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9e35ce6 e-con-full cat-linha cat-item tipo-semestral e-flex e-con e-child" data-id="9e35ce6" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-3b4bd4d e-con-full cat-fixa e-flex e-con e-child" data-id="3b4bd4d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6f1a933 cat-tag elementor-widget elementor-widget-heading" data-id="6f1a933" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">SEMESTRAL</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-b4061fa e-con-full cat-cresce e-flex e-con e-child" data-id="b4061fa" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-df941a7 cat-item-titulo elementor-widget elementor-widget-heading" data-id="df941a7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9c51f55 e-con-full cat-cresce e-flex e-con e-child" data-id="9c51f55" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ced6ea6 cat-item-titulo elementor-widget elementor-widget-heading" data-id="ced6ea6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#">Relatório semestral de atividades</a></h3>				</div>
-				<div class="elementor-element elementor-element-e601e94 cat-meta elementor-widget elementor-widget-text-editor" data-id="e601e94" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-97a789f cat-meta elementor-widget elementor-widget-text-editor" data-id="97a789f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Período coberto</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-b509725 e-con-full cat-fixa e-flex e-con e-child" data-id="b509725" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e48317c cat-ano elementor-widget elementor-widget-heading" data-id="e48317c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-b4b1a8c e-con-full cat-fixa e-flex e-con e-child" data-id="b4b1a8c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-63345f4 cat-ano elementor-widget elementor-widget-heading" data-id="63345f4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">2025</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-7d51782 e-con-full cat-fixa e-flex e-con e-child" data-id="7d51782" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-e7eb1c9 cat-link elementor-widget elementor-widget-heading" data-id="e7eb1c9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9773d5b e-con-full cat-fixa e-flex e-con e-child" data-id="9773d5b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0a701fe cat-link elementor-widget elementor-widget-heading" data-id="0a701fe" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="#">PDF ↓</a></div>				</div>
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-38c6387 e-flex e-con-boxed e-con e-child" data-id="38c6387" data-element_type="container" data-e-type="container" id="comunicacoes" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-8e250bd e-flex e-con-boxed e-con e-child" data-id="8e250bd" data-element_type="container" data-e-type="container" id="comunicacoes" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-74dd57a e-con-full e-flex e-con e-child" data-id="74dd57a" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-ed6ec7d elementor-widget elementor-widget-heading" data-id="ed6ec7d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-4de851b e-con-full e-flex e-con e-child" data-id="4de851b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f251d95 elementor-widget elementor-widget-heading" data-id="f251d95" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">COMUNICAÇÕES INTERNAS</h2>				</div>
 				</div>
-		<div class="elementor-element elementor-element-6f334b2 e-con-full e-flex e-con e-child" data-id="6f334b2" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-cee4fed elementor-widget elementor-widget-text-editor" data-id="cee4fed" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-d7f87db e-con-full e-flex e-con e-child" data-id="d7f87db" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a8e397a elementor-widget elementor-widget-text-editor" data-id="a8e397a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Comunicados e informes da Cátedra.</p>								</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-bade5e7 e-con-full cat-escuro cat-mural cat-central e-flex e-con e-child" data-id="bade5e7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-e08374d e-con-full cat-linha cat-linha-clara e-flex e-con e-child" data-id="e08374d" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-ac59015 e-con-full cat-fixa e-flex e-con e-child" data-id="ac59015" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-724228f cat-mes elementor-widget elementor-widget-heading" data-id="724228f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-3f2aa87 e-con-full cat-escuro cat-mural cat-central e-flex e-con e-child" data-id="3f2aa87" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-056163f e-con-full cat-linha cat-linha-clara e-flex e-con e-child" data-id="056163f" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-31c62be e-con-full cat-fixa e-flex e-con e-child" data-id="31c62be" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d7ec1f6 cat-mes elementor-widget elementor-widget-heading" data-id="d7ec1f6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">15 MAI 2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-16b646f e-con-full cat-cresce e-flex e-con e-child" data-id="16b646f" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8262423 cat-aviso-titulo elementor-widget elementor-widget-heading" data-id="8262423" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-b58bf05 e-con-full cat-cresce e-flex e-con e-child" data-id="b58bf05" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0f81240 cat-aviso-titulo elementor-widget elementor-widget-heading" data-id="0f81240" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#">Assunto do comunicado</a></h3>				</div>
-				<div class="elementor-element elementor-element-0260249 cat-meta elementor-widget elementor-widget-text-editor" data-id="0260249" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-4f855eb cat-meta elementor-widget elementor-widget-text-editor" data-id="4f855eb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Resumo em uma linha.</p>								</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-57da198 e-con-full cat-linha cat-linha-clara e-flex e-con e-child" data-id="57da198" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-625d58b e-con-full cat-fixa e-flex e-con e-child" data-id="625d58b" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-50a3d43 cat-mes elementor-widget elementor-widget-heading" data-id="50a3d43" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-2a72252 e-con-full cat-linha cat-linha-clara e-flex e-con e-child" data-id="2a72252" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-825ba49 e-con-full cat-fixa e-flex e-con e-child" data-id="825ba49" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0188188 cat-mes elementor-widget elementor-widget-heading" data-id="0188188" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">02 MAI 2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-87177f6 e-con-full cat-cresce e-flex e-con e-child" data-id="87177f6" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-4f76d64 cat-aviso-titulo elementor-widget elementor-widget-heading" data-id="4f76d64" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-1cd1639 e-con-full cat-cresce e-flex e-con e-child" data-id="1cd1639" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e3f6f84 cat-aviso-titulo elementor-widget elementor-widget-heading" data-id="e3f6f84" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#">Assunto do comunicado</a></h3>				</div>
-				<div class="elementor-element elementor-element-ac4da72 cat-meta elementor-widget elementor-widget-text-editor" data-id="ac4da72" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-82b1ed6 cat-meta elementor-widget elementor-widget-text-editor" data-id="82b1ed6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Resumo em uma linha.</p>								</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-f14811c e-con-full cat-linha cat-linha-clara e-flex e-con e-child" data-id="f14811c" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-66262dd e-con-full cat-fixa e-flex e-con e-child" data-id="66262dd" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-bb8f99c cat-mes elementor-widget elementor-widget-heading" data-id="bb8f99c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-cf6a0a5 e-con-full cat-linha cat-linha-clara e-flex e-con e-child" data-id="cf6a0a5" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-3ac53a9 e-con-full cat-fixa e-flex e-con e-child" data-id="3ac53a9" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-267d998 cat-mes elementor-widget elementor-widget-heading" data-id="267d998" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">18 ABR 2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-d62233c e-con-full cat-cresce e-flex e-con e-child" data-id="d62233c" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-b0606f2 cat-aviso-titulo elementor-widget elementor-widget-heading" data-id="b0606f2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9dca1e3 e-con-full cat-cresce e-flex e-con e-child" data-id="9dca1e3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6b8da65 cat-aviso-titulo elementor-widget elementor-widget-heading" data-id="6b8da65" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#">Assunto do comunicado</a></h3>				</div>
-				<div class="elementor-element elementor-element-783b8f7 cat-meta elementor-widget elementor-widget-text-editor" data-id="783b8f7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-96c8be4 cat-meta elementor-widget elementor-widget-text-editor" data-id="96c8be4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Resumo em uma linha.</p>								</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-fd806d5 e-con-full cat-linha cat-linha-clara e-flex e-con e-child" data-id="fd806d5" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-53fe21a e-con-full cat-fixa e-flex e-con e-child" data-id="53fe21a" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-5561996 cat-mes elementor-widget elementor-widget-heading" data-id="5561996" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-78ec3e5 e-con-full cat-linha cat-linha-clara e-flex e-con e-child" data-id="78ec3e5" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-2e7e363 e-con-full cat-fixa e-flex e-con e-child" data-id="2e7e363" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d5ddaca cat-mes elementor-widget elementor-widget-heading" data-id="d5ddaca" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">30 MAR 2026</div>				</div>
 				</div>
-		<div class="elementor-element elementor-element-6504d05 e-con-full cat-cresce e-flex e-con e-child" data-id="6504d05" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-17c776a cat-aviso-titulo elementor-widget elementor-widget-heading" data-id="17c776a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-e34ed91 e-con-full cat-cresce e-flex e-con e-child" data-id="e34ed91" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c8b60fd cat-aviso-titulo elementor-widget elementor-widget-heading" data-id="c8b60fd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#">Assunto do comunicado</a></h3>				</div>
-				<div class="elementor-element elementor-element-9c15f47 cat-meta elementor-widget elementor-widget-text-editor" data-id="9c15f47" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-ed14fbf cat-meta elementor-widget elementor-widget-text-editor" data-id="ed14fbf" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Resumo em uma linha.</p>								</div>
 				</div>
 				</div>

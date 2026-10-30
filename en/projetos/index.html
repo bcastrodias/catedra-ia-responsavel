@@ -183,6 +183,18 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* pessoas: cards com a tipografia da designer; aqui só o que ela não tinha (instituição, links, ficha, biografia) */
 		body .elementor .cat-foto.foto-martelada::before{background-image:inherit} /* efeito "martelado" no hover sem precisar de uma classe pessoa-N por foto */
 		body .elementor .cat-pessoa .elementor-heading-title a:hover{color:var(--cat-suave)}
+		/* pessoas: cards centrados, colunas largas e fileiras incompletas no meio da página, sem texto justificado */
+		body .elementor .cat-fileira-pessoas>.e-con-inner,body .elementor .cat-fileira-pessoas{align-items:center}
+		body .elementor .cat-fileira-pessoas>.cat-cab,body .elementor .cat-fileira-pessoas>.e-con-inner>.cat-cab{text-align:center;align-self:stretch}
+		body .elementor .cat-grade-pessoas,body .elementor .cat-grade-pessoas>.e-con-inner{display:flex!important;flex-wrap:wrap;justify-content:center;gap:80px 48px!important;width:100%}
+		body .elementor .cat-grade-pessoas .cat-pessoa{flex:0 0 calc((100% - 4*48px)/5)!important;width:auto!important;max-width:calc((100% - 4*48px)/5);align-items:center;text-align:center}
+		body .elementor .cat-pessoa>.e-con-inner{align-items:center}
+		body .elementor .cat-pessoa .elementor-widget{align-self:stretch;text-align:center}
+		body .elementor .cat-pessoa .elementor-heading-title,body .elementor .cat-pessoa p{text-align:center!important;word-spacing:normal!important}
+		body .elementor .cat-pessoa .elementor-widget-image img{margin:0 auto 10px}
+		body .elementor .cat-pessoa .e-con,body .elementor .cat-pessoa ul,body .elementor .cat-pessoa .elementor-icon-list-items{justify-content:center!important}
+		@media(max-width:1024px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:calc((100% - 2*48px)/3)!important;max-width:calc((100% - 2*48px)/3)}}
+		@media(max-width:767px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:100%!important;max-width:320px}}
 		/* ritmo dos cards: foto redonda com anel de textura e filete claro, nome compacto, colunas pares escalonadas */
 		body .elementor .e-con.cat-foto-anel{border-radius:50%;aspect-ratio:1/1;margin-bottom:14px}
 		body .elementor .e-con.cat-foto-anel .cat-foto{border-radius:50%;box-shadow:0 0 0 2px var(--cat-fundo)}
@@ -303,7 +315,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					}
 				}
 			</style>
-			<style id="wp-custom-css">
+			<link rel="icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-150x150.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<meta name="msapplication-TileImage" content="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<style id="wp-custom-css">
 .card-integrante {
     aspect-ratio: 1 / 1 !important;
     width: 100% !important;
@@ -493,46 +509,46 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-15fdade cat-idiomas-box elementor-widget elementor-widget-html" data-id="15fdade" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-c02f2d4 cat-idiomas-box elementor-widget elementor-widget-html" data-id="c02f2d4" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Language"><a href="../../projetos/index.html" lang="pt" hreflang="pt">PT</a><a href="index.html" lang="en" hreflang="en" class="ativo" aria-current="true">EN</a><a href="../../es/projetos/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-0a8bf00 e-con-full e-flex e-con e-parent" data-id="0a8bf00" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-861fa7c e-flex e-con-boxed e-con e-child" data-id="861fa7c" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-2f46c66 e-con-full e-flex e-con e-parent" data-id="2f46c66" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-e1cf991 e-flex e-con-boxed e-con e-child" data-id="e1cf991" data-element_type="container" data-e-type="container">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-f7adaf1 e-con-full lente-viva e-flex e-con e-child" data-id="f7adaf1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-39b1e26 e-con-full lente-viva e-flex e-con e-child" data-id="39b1e26" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-f4c32bf e-flex e-con-boxed e-con e-child" data-id="f4c32bf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-95af991 e-flex e-con-boxed e-con e-child" data-id="95af991" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-bd70c27 e-con-full e-flex e-con e-child" data-id="bd70c27" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-be3aaa8 elementor-widget elementor-widget-heading" data-id="be3aaa8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-0b209ed e-con-full e-flex e-con e-child" data-id="0b209ed" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6291954 elementor-widget elementor-widget-heading" data-id="6291954" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">PROJECTS</h2>				</div>
 				</div>
-		<div class="elementor-element elementor-element-fcbcfdc e-con-full e-flex e-con e-child" data-id="fcbcfdc" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-1cb5840 cat-frase-media elementor-widget elementor-widget-text-editor" data-id="1cb5840" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-c77328e e-con-full e-flex e-con e-child" data-id="c77328e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4bf2ff6 cat-frase-media elementor-widget elementor-widget-text-editor" data-id="4bf2ff6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>The Chair&#8217;s research is organised in four lines. In each one, the ongoing projects, what they investigate and who is responsible for them.</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-6589c42 e-con-full cat-abas-projetos e-flex e-con e-child" data-id="6589c42" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-0893f6e cat-cab elementor-widget elementor-widget-heading" data-id="0893f6e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-951edd3 e-con-full cat-abas-projetos e-flex e-con e-child" data-id="951edd3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-44509fe cat-cab elementor-widget elementor-widget-heading" data-id="44509fe" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">RESEARCH LINES</div>				</div>
-		<div class="elementor-element elementor-element-79bbbdd e-con-full cat-indice-linhas e-flex e-con e-child" data-id="79bbbdd" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-5b4e510 e-con-full cat-fixa e-flex e-con e-child" data-id="5b4e510" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-32d59dc cat-indice-linha elementor-widget elementor-widget-heading" data-id="32d59dc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-c2dd0ca e-con-full cat-indice-linhas e-flex e-con e-child" data-id="c2dd0ca" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-3df0d76 e-con-full cat-fixa e-flex e-con e-child" data-id="3df0d76" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3d90ea5 cat-indice-linha elementor-widget elementor-widget-heading" data-id="3d90ea5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#regulacao-e-inovacao">Regulation and Innovation</a></h3>				</div>
 				</div>
-		<div class="elementor-element elementor-element-11e4dc5 e-con-full cat-fixa e-flex e-con e-child" data-id="11e4dc5" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-fadb5e7 cat-indice-linha elementor-widget elementor-widget-heading" data-id="fadb5e7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9e108c7 e-con-full cat-fixa e-flex e-con e-child" data-id="9e108c7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-afddc45 cat-indice-linha elementor-widget elementor-widget-heading" data-id="afddc45" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#mercado-de-trabalho">Labour Market</a></h3>				</div>
 				</div>
-		<div class="elementor-element elementor-element-2500527 e-con-full cat-fixa e-flex e-con e-child" data-id="2500527" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8b2f256 cat-indice-linha elementor-widget elementor-widget-heading" data-id="8b2f256" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9a85c65 e-con-full cat-fixa e-flex e-con e-child" data-id="9a85c65" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1ea3118 cat-indice-linha elementor-widget elementor-widget-heading" data-id="1ea3118" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#ia-e-administracao-publica">AI and Public Administration</a></h3>				</div>
 				</div>
-		<div class="elementor-element elementor-element-cb66a80 e-con-full cat-fixa e-flex e-con e-child" data-id="cb66a80" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-ad775a8 cat-indice-linha elementor-widget elementor-widget-heading" data-id="ad775a8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9db4370 e-con-full cat-fixa e-flex e-con e-child" data-id="9db4370" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9dbbb46 cat-indice-linha elementor-widget elementor-widget-heading" data-id="9dbbb46" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default"><a href="#observatorio-de-incidentes">National AI Incident Observatory</a></h3>				</div>
 				</div>
 				</div>
@@ -540,221 +556,221 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-15c0550 e-con-boxed e-flex e-con e-parent" data-id="15c0550" data-element_type="container" data-e-type="container" id="regulacao-e-inovacao" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-71079ce e-con-boxed e-flex e-con e-parent" data-id="71079ce" data-element_type="container" data-e-type="container" id="regulacao-e-inovacao" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-f735ab5 e-con-full e-flex e-con e-child" data-id="f735ab5" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-96fcbb7 cat-secao-titulo elementor-widget elementor-widget-heading" data-id="96fcbb7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-42a55e5 e-con-full e-flex e-con e-child" data-id="42a55e5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d3b6e53 cat-secao-titulo elementor-widget elementor-widget-heading" data-id="d3b6e53" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Regulation and Innovation</h2>				</div>
-				<div class="elementor-element elementor-element-46e7a07 cat-intro elementor-widget elementor-widget-text-editor" data-id="46e7a07" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-01aa67d cat-intro elementor-widget elementor-widget-text-editor" data-id="01aa67d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>In 2026, this front assesses the effectiveness and impacts of the AI bills before the National Congress, with emphasis on the institutional dimensions and on reconciling risk mitigation and control, on one side, with incentives and stimuli for innovation, on the other. In parallel, it designs a sandbox for the USP-Google environment and opens a dialogue with the São Paulo State Legislative Assembly on state-level legislation.</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-6f7e38c e-con-full cat-projetos e-flex e-con e-child" data-id="6f7e38c" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-9d85e1b e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="9d85e1b" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-600834d cat-doc-titulo elementor-widget elementor-widget-heading" data-id="600834d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-80a8bda e-con-full cat-projetos e-flex e-con e-child" data-id="80a8bda" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-190f0e0 e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="190f0e0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-dd90088 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="dd90088" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default">Assessment of AI regulation in Brazil</h3>				</div>
-				<div class="elementor-element elementor-element-37891ea cat-meta elementor-widget elementor-widget-text-editor" data-id="37891ea" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-e54f1cc cat-meta elementor-widget elementor-widget-text-editor" data-id="e54f1cc" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Assessment of the effectiveness and impacts of the bills before the National Congress, the general AI regulation and the AI Governance System proposed by the Executive, with emphasis on the institutional dimensions and on reconciling risk control with incentives for innovation.</p>								</div>
-				<div class="elementor-element elementor-element-9901766 cat-cab elementor-widget elementor-widget-heading" data-id="9901766" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-392bc9f cat-cab elementor-widget elementor-widget-heading" data-id="392bc9f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ACTIONS</div>				</div>
-				<div class="elementor-element elementor-element-edfc215 cat-meta elementor-widget elementor-widget-text-editor" data-id="edfc215" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-48a8fb8 cat-meta elementor-widget elementor-widget-text-editor" data-id="48a8fb8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>AI regulation in Brazil: assessment of Bill 2338, on guidelines for the ethical and responsible use of AI</li><li>The SIA and the ANPD: assessment of Bill 6237/2025, which creates the National System for the Development, Regulation and Governance of Artificial Intelligence and defines the role of the ANPD</li><li>AI regulation and innovation: assessment of the effectiveness of incentives for AI research and development, of funding and of regulatory sandboxes, in international comparison</li></ul>								</div>
-				<div class="elementor-element elementor-element-5a996be cat-cab elementor-widget elementor-widget-heading" data-id="5a996be" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-ce7eb76 cat-cab elementor-widget elementor-widget-heading" data-id="ce7eb76" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PLANNED DELIVERABLES</div>				</div>
-				<div class="elementor-element elementor-element-0daab5e cat-meta elementor-widget elementor-widget-text-editor" data-id="0daab5e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-707660e cat-meta elementor-widget elementor-widget-text-editor" data-id="707660e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
-				<div class="elementor-element elementor-element-5eda327 cat-cab elementor-widget elementor-widget-heading" data-id="5eda327" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-8c064a5 cat-cab elementor-widget elementor-widget-heading" data-id="8c064a5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TEAM</div>				</div>
-				<div class="elementor-element elementor-element-254f8cd cat-meta elementor-widget elementor-widget-text-editor" data-id="254f8cd" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-14d97bb cat-meta elementor-widget elementor-widget-text-editor" data-id="14d97bb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
-				<div class="elementor-element elementor-element-7a18b7b cat-cab elementor-widget elementor-widget-heading" data-id="7a18b7b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-c782ea4 cat-cab elementor-widget elementor-widget-heading" data-id="c782ea4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNERSHIPS</div>				</div>
-				<div class="elementor-element elementor-element-23217ce cat-meta elementor-widget elementor-widget-text-editor" data-id="23217ce" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-021d85f cat-meta elementor-widget elementor-widget-text-editor" data-id="021d85f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-daf1bf0 e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="daf1bf0" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-4d05827 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="4d05827" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-fb070a7 e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="fb070a7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-29776d9 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="29776d9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default">Sandbox USP-Google</h3>				</div>
-				<div class="elementor-element elementor-element-34a8adf cat-meta elementor-widget elementor-widget-text-editor" data-id="34a8adf" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-50f860a cat-meta elementor-widget elementor-widget-text-editor" data-id="50f860a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Design of a sandbox for the USP-Google environment, including USP&#8217;s other AI research centres and Google&#8217;s initiatives, allowing controlled experimentation in different sectors and assessing the effectiveness of this instrument in promoting innovation.</p>								</div>
-				<div class="elementor-element elementor-element-cc5e6b2 cat-cab elementor-widget elementor-widget-heading" data-id="cc5e6b2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-6db1316 cat-cab elementor-widget elementor-widget-heading" data-id="6db1316" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ACTIONS</div>				</div>
-				<div class="elementor-element elementor-element-89d2e82 cat-meta elementor-widget elementor-widget-text-editor" data-id="89d2e82" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-dac2209 cat-meta elementor-widget elementor-widget-text-editor" data-id="dac2209" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>Design of the sandbox with USP&#8217;s AI research centres and Google&#8217;s initiatives</li><li>Controlled experimentation in different sectors</li><li>Support for research projects and startups</li><li>Assessment of the sandbox&#8217;s effectiveness in promoting innovation</li></ul>								</div>
-				<div class="elementor-element elementor-element-c8aea4a cat-cab elementor-widget elementor-widget-heading" data-id="c8aea4a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-441e360 cat-cab elementor-widget elementor-widget-heading" data-id="441e360" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PLANNED DELIVERABLES</div>				</div>
-				<div class="elementor-element elementor-element-ca10325 cat-meta elementor-widget elementor-widget-text-editor" data-id="ca10325" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-e10e8d4 cat-meta elementor-widget elementor-widget-text-editor" data-id="e10e8d4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
-				<div class="elementor-element elementor-element-f661e90 cat-cab elementor-widget elementor-widget-heading" data-id="f661e90" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-9da6b3b cat-cab elementor-widget elementor-widget-heading" data-id="9da6b3b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TEAM</div>				</div>
-				<div class="elementor-element elementor-element-2ad7692 cat-meta elementor-widget elementor-widget-text-editor" data-id="2ad7692" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-82acaee cat-meta elementor-widget elementor-widget-text-editor" data-id="82acaee" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
-				<div class="elementor-element elementor-element-82436c4 cat-cab elementor-widget elementor-widget-heading" data-id="82436c4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-4773b66 cat-cab elementor-widget elementor-widget-heading" data-id="4773b66" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNERSHIPS</div>				</div>
-				<div class="elementor-element elementor-element-6f770c9 cat-meta elementor-widget elementor-widget-text-editor" data-id="6f770c9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-fcf4dc7 cat-meta elementor-widget elementor-widget-text-editor" data-id="fcf4dc7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-21c3f8c e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="21c3f8c" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-b9bf4e0 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="b9bf4e0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-00b4da1 e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="00b4da1" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-209b192 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="209b192" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default">State legislation: dialogue with Alesp</h3>				</div>
-				<div class="elementor-element elementor-element-567788f cat-meta elementor-widget elementor-widget-text-editor" data-id="567788f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-7aed7a1 cat-meta elementor-widget elementor-widget-text-editor" data-id="7aed7a1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Dialogue with the São Paulo State Legislative Assembly to assess, as in other federal systems, whether specific AI legislation at state level is warranted.</p>								</div>
-				<div class="elementor-element elementor-element-64f31bf cat-cab elementor-widget elementor-widget-heading" data-id="64f31bf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-04e6e54 cat-cab elementor-widget elementor-widget-heading" data-id="04e6e54" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ACTIONS</div>				</div>
-				<div class="elementor-element elementor-element-d2566d4 cat-meta elementor-widget elementor-widget-text-editor" data-id="d2566d4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-90c053b cat-meta elementor-widget elementor-widget-text-editor" data-id="90c053b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>Dialogue with the São Paulo State Legislative Assembly</li><li>Comparison with the experience of other federal systems</li><li>Assessment of whether specific AI legislation at state level is warranted</li></ul>								</div>
-				<div class="elementor-element elementor-element-f6b0006 cat-cab elementor-widget elementor-widget-heading" data-id="f6b0006" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-cecc2b5 cat-cab elementor-widget elementor-widget-heading" data-id="cecc2b5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PLANNED DELIVERABLES</div>				</div>
-				<div class="elementor-element elementor-element-5228b16 cat-meta elementor-widget elementor-widget-text-editor" data-id="5228b16" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-03ca486 cat-meta elementor-widget elementor-widget-text-editor" data-id="03ca486" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
-				<div class="elementor-element elementor-element-71efc61 cat-cab elementor-widget elementor-widget-heading" data-id="71efc61" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-3d4543f cat-cab elementor-widget elementor-widget-heading" data-id="3d4543f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TEAM</div>				</div>
-				<div class="elementor-element elementor-element-e7e9791 cat-meta elementor-widget elementor-widget-text-editor" data-id="e7e9791" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-58eb6b6 cat-meta elementor-widget elementor-widget-text-editor" data-id="58eb6b6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
-				<div class="elementor-element elementor-element-0dba5c6 cat-cab elementor-widget elementor-widget-heading" data-id="0dba5c6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-fafeb53 cat-cab elementor-widget elementor-widget-heading" data-id="fafeb53" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNERSHIPS</div>				</div>
-				<div class="elementor-element elementor-element-60f093b cat-meta elementor-widget elementor-widget-text-editor" data-id="60f093b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-de37544 cat-meta elementor-widget elementor-widget-text-editor" data-id="de37544" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-0a4d874 e-con-full e-flex e-con e-child" data-id="0a4d874" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-aee0c6e e-con-full lente-viva e-flex e-con e-child" data-id="aee0c6e" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-a65824c e-con-full e-flex e-con e-child" data-id="a65824c" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-29607f7 e-con-full lente-viva e-flex e-con e-child" data-id="29607f7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-16f5de3 e-con-full lente-viva e-flex e-con e-child" data-id="16f5de3" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-17e448a e-con-full lente-viva e-flex e-con e-child" data-id="17e448a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-0a7868d e-con-boxed e-flex e-con e-parent" data-id="0a7868d" data-element_type="container" data-e-type="container" id="mercado-de-trabalho" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-ec451ae e-con-boxed e-flex e-con e-parent" data-id="ec451ae" data-element_type="container" data-e-type="container" id="mercado-de-trabalho" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-f7b5447 e-con-full e-flex e-con e-child" data-id="f7b5447" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-8d974e1 cat-secao-titulo elementor-widget elementor-widget-heading" data-id="8d974e1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-acf9b3a e-con-full e-flex e-con e-child" data-id="acf9b3a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0b57158 cat-secao-titulo elementor-widget elementor-widget-heading" data-id="0b57158" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Labour Market</h2>				</div>
-				<div class="elementor-element elementor-element-a6faa1c cat-intro elementor-widget elementor-widget-text-editor" data-id="a6faa1c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-7d2c7c7 cat-intro elementor-widget elementor-widget-text-editor" data-id="7d2c7c7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>AI destroys or displaces jobs, through automation and tools that replace people, and creates others, above all in highly skilled activities that require training programmes. No sector will be spared the transformations of digitalisation and AI, while demand grows for computing, engineering and data science professionals, at both degree and technical level.</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-bf358dc e-con-full cat-projetos e-flex e-con e-child" data-id="bf358dc" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-e2f6899 e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="e2f6899" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-4abfe74 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="4abfe74" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-e434d32 e-con-full cat-projetos e-flex e-con e-child" data-id="e434d32" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-023aa8b e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="023aa8b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d7b226a cat-doc-titulo elementor-widget elementor-widget-heading" data-id="d7b226a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default">Impacts of AI on the labour market and on pay</h3>				</div>
-				<div class="elementor-element elementor-element-01bcdd7 cat-meta elementor-widget elementor-widget-text-editor" data-id="01bcdd7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-300d1db cat-meta elementor-widget elementor-widget-text-editor" data-id="300d1db" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>First part of the studies: the broader impacts of the transformations brought by AI on the labour market and pay levels in Brazil.</p>								</div>
-				<div class="elementor-element elementor-element-7e07766 cat-cab elementor-widget elementor-widget-heading" data-id="7e07766" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-770205f cat-cab elementor-widget elementor-widget-heading" data-id="770205f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ACTIONS</div>				</div>
-				<div class="elementor-element elementor-element-9535f3d cat-meta elementor-widget elementor-widget-text-editor" data-id="9535f3d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-ba5385c cat-meta elementor-widget elementor-widget-text-editor" data-id="ba5385c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>Map the differential impacts of AI across sectors and occupations and analyse the adequacy of earnings in those occupations</li><li>Analyse the configuration of skills that influences AI adoption and identify qualification and training strategies for a just transition</li><li>Adapt and replicate for Brazil, with RAIS and PNAD data, the ILO methodology for classifying occupations by gradient of exposure</li><li>Identify occupations and sectors linked to the green economy and sustainability</li></ul>								</div>
-				<div class="elementor-element elementor-element-19ac4f9 cat-cab elementor-widget elementor-widget-heading" data-id="19ac4f9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-77c6695 cat-cab elementor-widget elementor-widget-heading" data-id="77c6695" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PLANNED DELIVERABLES</div>				</div>
-				<div class="elementor-element elementor-element-5adcaf8 cat-meta elementor-widget elementor-widget-text-editor" data-id="5adcaf8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-9bbf073 cat-meta elementor-widget elementor-widget-text-editor" data-id="9bbf073" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>September 2026 · Report and seminar on the overall impact of AI on the labour market: the most exposed occupations and sectors</li><li>November 2026 · Report and seminar on the impact of AI on green-economy occupations and sectors</li></ul>								</div>
-				<div class="elementor-element elementor-element-a2846eb cat-cab elementor-widget elementor-widget-heading" data-id="a2846eb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-5dd855f cat-cab elementor-widget elementor-widget-heading" data-id="5dd855f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TEAM</div>				</div>
-				<div class="elementor-element elementor-element-886fc6a cat-meta elementor-widget elementor-widget-text-editor" data-id="886fc6a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-4bfd03b cat-meta elementor-widget elementor-widget-text-editor" data-id="4bfd03b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-autores"><span class="cat-ref-onde">Lead</span> · <a href="../pessoas/ian-prates/index.html">Ian Prates</a></p><p>Two postdoctoral researchers from USP or other institutions; public call for two doctoral candidates and two undergraduate students. Three-year work plan, funded by partners and additional resources.</p>								</div>
-				<div class="elementor-element elementor-element-7fe026b cat-cab elementor-widget elementor-widget-heading" data-id="7fe026b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-c78aabe cat-cab elementor-widget elementor-widget-heading" data-id="c78aabe" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNERSHIPS</div>				</div>
-				<div class="elementor-element elementor-element-67649c2 cat-meta elementor-widget elementor-widget-text-editor" data-id="67649c2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-277631f cat-meta elementor-widget elementor-widget-text-editor" data-id="277631f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-65ab742 e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="65ab742" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-33702f7 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="33702f7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-66cd87c e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="66cd87c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4df4e9d cat-doc-titulo elementor-widget elementor-widget-heading" data-id="4df4e9d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default">Skilled human resources in AI in Brazil</h3>				</div>
-				<div class="elementor-element elementor-element-c5dc1f3 cat-meta elementor-widget elementor-widget-text-editor" data-id="c5dc1f3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-15f4ee7 cat-meta elementor-widget elementor-widget-text-editor" data-id="15f4ee7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Second part of the studies: the state of skilled human resources in Brazil, in higher education and at the other levels of training.</p>								</div>
-				<div class="elementor-element elementor-element-929a404 cat-cab elementor-widget elementor-widget-heading" data-id="929a404" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-3ef0aec cat-cab elementor-widget elementor-widget-heading" data-id="3ef0aec" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ACTIONS</div>				</div>
-				<div class="elementor-element elementor-element-3bd7cca cat-meta elementor-widget elementor-widget-text-editor" data-id="3bd7cca" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-67ee14e cat-meta elementor-widget elementor-widget-text-editor" data-id="67ee14e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>Diagnosis of AI research in Brazil and Latin America: scientific output and mapping of talent by institution, with international positioning</li><li>AI training in Brazilian higher education: diagnosis and recent evolution of STEM and Computing</li><li>AI and STEM training in general and vocational secondary education (Novo Ensino Médio)</li><li>Possibilities and initiatives for large-scale AI literacy: USP, Univesp and others</li></ul>								</div>
-				<div class="elementor-element elementor-element-16aacdf cat-cab elementor-widget elementor-widget-heading" data-id="16aacdf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-1999817 cat-cab elementor-widget elementor-widget-heading" data-id="1999817" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PLANNED DELIVERABLES</div>				</div>
-				<div class="elementor-element elementor-element-8a8cb9b cat-meta elementor-widget elementor-widget-text-editor" data-id="8a8cb9b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-1629041 cat-meta elementor-widget elementor-widget-text-editor" data-id="1629041" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>May 2026 · Report and seminar on the state of AI research in Brazil and Latin America</li><li>October 2026 · Report and seminar on STEM training in Brazil: higher and secondary education</li></ul>								</div>
-				<div class="elementor-element elementor-element-b396b1e cat-cab elementor-widget elementor-widget-heading" data-id="b396b1e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-2ce25d4 cat-cab elementor-widget elementor-widget-heading" data-id="2ce25d4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TEAM</div>				</div>
-				<div class="elementor-element elementor-element-2b3467e cat-meta elementor-widget elementor-widget-text-editor" data-id="2b3467e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-f00bce6 cat-meta elementor-widget elementor-widget-text-editor" data-id="f00bce6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Principal investigator to be defined; two postdoctoral researchers from USP or other institutions and a public call for two undergraduate students, funded by partners and additional resources.</p>								</div>
-				<div class="elementor-element elementor-element-ef926e5 cat-cab elementor-widget elementor-widget-heading" data-id="ef926e5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-4e100a0 cat-cab elementor-widget elementor-widget-heading" data-id="4e100a0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNERSHIPS</div>				</div>
-				<div class="elementor-element elementor-element-aa47c57 cat-meta elementor-widget elementor-widget-text-editor" data-id="aa47c57" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-01dd2f2 cat-meta elementor-widget elementor-widget-text-editor" data-id="01dd2f2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Potential partnership with Elsevier, RICYT-IDB and ECLAC</p>								</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-580afff e-con-full e-flex e-con e-child" data-id="580afff" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-2b9fe7d e-con-full lente-viva e-flex e-con e-child" data-id="2b9fe7d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-0ae2341 e-con-full e-flex e-con e-child" data-id="0ae2341" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-66405fe e-con-full lente-viva e-flex e-con e-child" data-id="66405fe" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-e614732 e-con-full lente-viva e-flex e-con e-child" data-id="e614732" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-682458b e-con-full lente-viva e-flex e-con e-child" data-id="682458b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-76a4081 e-con-boxed e-flex e-con e-parent" data-id="76a4081" data-element_type="container" data-e-type="container" id="ia-e-administracao-publica" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-8610eea e-con-boxed e-flex e-con e-parent" data-id="8610eea" data-element_type="container" data-e-type="container" id="ia-e-administracao-publica" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-305e4bc e-con-full e-flex e-con e-child" data-id="305e4bc" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-ebc9151 cat-secao-titulo elementor-widget elementor-widget-heading" data-id="ebc9151" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-7c99703 e-con-full e-flex e-con e-child" data-id="7c99703" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-98e8a57 cat-secao-titulo elementor-widget elementor-widget-heading" data-id="98e8a57" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">AI and Public Administration</h2>				</div>
-				<div class="elementor-element elementor-element-843a226 cat-intro elementor-widget elementor-widget-text-editor" data-id="843a226" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-93a126b cat-intro elementor-widget elementor-widget-text-editor" data-id="93a126b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Opportunities, challenges and risks of using AI in the design, implementation and evaluation of public policy in the Federal Public Administration, focusing on two strategic ministries: Health, and Justice and Public Security. The research combines a diagnosis of the present, through in-depth interviews with key actors in both areas, with foresight techniques to anticipate the future and shed light on the opportunities, challenges and risks specific to these processes.</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-ae03e15 e-con-full cat-projetos e-flex e-con e-child" data-id="ae03e15" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-bf74804 e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="bf74804" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-a416a7c cat-doc-titulo elementor-widget elementor-widget-heading" data-id="a416a7c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-e99596c e-con-full cat-projetos e-flex e-con e-child" data-id="e99596c" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-266e42e e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="266e42e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-121311e cat-doc-titulo elementor-widget elementor-widget-heading" data-id="121311e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default">AI@APF – The challenge of using Artificial Intelligence in the Federal Public Administration: sectoral analyses and foresight of future scenarios</h3>				</div>
-				<div class="elementor-element elementor-element-315d05a cat-meta elementor-widget elementor-widget-text-editor" data-id="315d05a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-3c76cb9 cat-meta elementor-widget elementor-widget-text-editor" data-id="3c76cb9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>This project investigates how Artificial Intelligence can support the design, implementation and evaluation of public policy in the Brazilian Federal Public Administration. Combining in-depth interviews with key actors and foresight techniques, the research seeks to identify the potential, limits and implications of using AI in the workings of the public machine and in its relationship with society. By linking a diagnosis of the present with foresight of future scenarios, the study aims to inform the strengthening of public AI governance and to broaden the theoretical debate on AI&#8217;s applications, conditions and effects in the public sector.</p>								</div>
-				<div class="elementor-element elementor-element-ced5c7b cat-cab elementor-widget elementor-widget-heading" data-id="ced5c7b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-17e3cdd cat-cab elementor-widget elementor-widget-heading" data-id="17e3cdd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ACTIONS</div>				</div>
-				<div class="elementor-element elementor-element-8aefd71 cat-meta elementor-widget elementor-widget-text-editor" data-id="8aefd71" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-aa34f54 cat-meta elementor-widget elementor-widget-text-editor" data-id="aa34f54" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>Diagnosis of the present: in-depth interviews with key actors in the Ministries of Health and of Justice and Public Security</li><li>Anticipating the future: scenarios built with foresight techniques</li><li>Identification of the potential, limits and implications of AI use in the public machine and in its relationship with society</li><li>Inputs for public AI governance and for the debate on its applications, conditions and effects in the public sector</li></ul>								</div>
-				<div class="elementor-element elementor-element-1d6d39c cat-cab elementor-widget elementor-widget-heading" data-id="1d6d39c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-e255088 cat-cab elementor-widget elementor-widget-heading" data-id="e255088" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PLANNED DELIVERABLES</div>				</div>
-				<div class="elementor-element elementor-element-777f033 cat-meta elementor-widget elementor-widget-text-editor" data-id="777f033" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-353f9b9 cat-meta elementor-widget elementor-widget-text-editor" data-id="353f9b9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
-				<div class="elementor-element elementor-element-993c6dd cat-cab elementor-widget elementor-widget-heading" data-id="993c6dd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-079da58 cat-cab elementor-widget elementor-widget-heading" data-id="079da58" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TEAM</div>				</div>
-				<div class="elementor-element elementor-element-9ecd743 cat-meta elementor-widget elementor-widget-text-editor" data-id="9ecd743" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-612781c cat-meta elementor-widget elementor-widget-text-editor" data-id="612781c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-autores"><span class="cat-ref-onde">Lead</span> · <a href="../pessoas/rodrigo-brandao/index.html">Rodrigo Brandão</a></p><p class="cat-autores"><span class="cat-ref-onde">Participants</span> · Catarina Ianni Segatto, <a href="../pessoas/mateus-henrique-amorim-moura-rocha/index.html">Mateus Henrique Amorim Moura Rocha</a>, Pedro Vivas</p>								</div>
-				<div class="elementor-element elementor-element-1383e58 cat-cab elementor-widget elementor-widget-heading" data-id="1383e58" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-bf3c398 cat-cab elementor-widget elementor-widget-heading" data-id="bf3c398" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNERSHIPS</div>				</div>
-				<div class="elementor-element elementor-element-8f058e9 cat-meta elementor-widget elementor-widget-text-editor" data-id="8f058e9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-9f83837 cat-meta elementor-widget elementor-widget-text-editor" data-id="9f83837" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p class="cat-a-definir">To be defined</p>								</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-8a53f33 e-con-full e-flex e-con e-child" data-id="8a53f33" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-f81577a e-con-full lente-viva e-flex e-con e-child" data-id="f81577a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-cd3adeb e-con-full e-flex e-con e-child" data-id="cd3adeb" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-a6295b5 e-con-full lente-viva e-flex e-con e-child" data-id="a6295b5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-c197576 e-con-full lente-viva e-flex e-con e-child" data-id="c197576" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-3c5b93d e-con-full lente-viva e-flex e-con e-child" data-id="3c5b93d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-e3376d3 e-con-boxed e-flex e-con e-parent" data-id="e3376d3" data-element_type="container" data-e-type="container" id="observatorio-de-incidentes" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-df5408d e-con-boxed e-flex e-con e-parent" data-id="df5408d" data-element_type="container" data-e-type="container" id="observatorio-de-incidentes" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-1c2284b e-con-full e-flex e-con e-child" data-id="1c2284b" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-0203b42 cat-secao-titulo elementor-widget elementor-widget-heading" data-id="0203b42" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-d322884 e-con-full e-flex e-con e-child" data-id="d322884" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-bd7e0fa cat-secao-titulo elementor-widget elementor-widget-heading" data-id="bd7e0fa" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">National AI Incident Observatory</h2>				</div>
-				<div class="elementor-element elementor-element-38adc6c cat-intro elementor-widget elementor-widget-text-editor" data-id="38adc6c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-7cf4357 cat-intro elementor-widget elementor-widget-text-editor" data-id="7cf4357" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>AI incidents are problems of many kinds associated with the proliferation of AI agents and tools: inaccuracy and lack of explainability, job losses, threats to privacy, risks to equity and justice, cybersecurity, political instability, national security, environmental and reputational impacts and intellectual property violations. Institutions such as the OECD (AI Incidents Monitor), UNESCO, the ILO, Stanford HAI, the Turing Institute, MIT and, in Brazil, OBIA at NIC.br monitor these risks. Together with partners, the Chair wants to help build incident-monitoring tools in the country.</p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-23f879c e-con-full cat-projetos e-flex e-con e-child" data-id="23f879c" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-e4c6f3e e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="e4c6f3e" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-21c3260 cat-doc-titulo elementor-widget elementor-widget-heading" data-id="21c3260" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-f0c0df2 e-con-full cat-projetos e-flex e-con e-child" data-id="f0c0df2" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-58c1bf5 e-con-full cat-projeto cat-fixa e-flex e-con e-child" data-id="58c1bf5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-17adc1d cat-doc-titulo elementor-widget elementor-widget-heading" data-id="17adc1d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h3 class="elementor-heading-title elementor-size-default">National AI Incident Observatory: database and monitoring</h3>				</div>
-				<div class="elementor-element elementor-element-0d05633 cat-meta elementor-widget elementor-widget-text-editor" data-id="0d05633" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-382dcc8 cat-meta elementor-widget elementor-widget-text-editor" data-id="382dcc8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Building a national database of AI incidents, through systematic collection from public sources, and monitoring incidents in selected themes, in exchange with similar observatories in Brazil and around the world.</p>								</div>
-				<div class="elementor-element elementor-element-8450480 cat-cab elementor-widget elementor-widget-heading" data-id="8450480" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-0a2d702 cat-cab elementor-widget elementor-widget-heading" data-id="0a2d702" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">ACTIONS</div>				</div>
-				<div class="elementor-element elementor-element-93f7781 cat-meta elementor-widget elementor-widget-text-editor" data-id="93f7781" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-4dec8dd cat-meta elementor-widget elementor-widget-text-editor" data-id="4dec8dd" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>Analysis and assessment of the taxonomies and categories adopted internationally for AI risks and of the methodologies for identifying incidents</li><li>Definition of coding procedures to create structured datasets for analysis</li><li>Creation of a national database of AI incidents, with systematic collection from public sources: media, academic reports, court decisions and technical audits</li><li>Comparative qualitative analysis of the data, to examine incident patterns, and quantitative descriptive metrics, to identify systemic vulnerabilities across sectors</li><li>Monitoring of incidents in selected themes, notably public health and electoral processes</li><li>Exchange and joint activities with similar observatories: CGI.br, OBIA, InternetLab, DAPP-FGV, CGEE, INCT-DSI, UNESCO, OECD, MIT, Stanford and IBICT, among others</li></ul>								</div>
-				<div class="elementor-element elementor-element-f6830c8 cat-cab elementor-widget elementor-widget-heading" data-id="f6830c8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-d8ce439 cat-cab elementor-widget elementor-widget-heading" data-id="d8ce439" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PLANNED DELIVERABLES</div>				</div>
-				<div class="elementor-element elementor-element-3ea210a cat-meta elementor-widget elementor-widget-text-editor" data-id="3ea210a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-ffb1951 cat-meta elementor-widget elementor-widget-text-editor" data-id="ffb1951" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<ul class="cat-lista"><li>First half of 2026 · Opening workshop on AI risk taxonomies and incident identification methodologies</li><li>2026 and 2027 · Partnerships with other observatories and national and international institutions</li><li>2026 and 2027 · Workshops on impacts in health and in electoral processes</li><li>November 2026 · First version of the Observatory&#8217;s database</li><li>November 2026 · Launch seminar of the Observatory</li></ul>								</div>
-				<div class="elementor-element elementor-element-e82ad17 cat-cab elementor-widget elementor-widget-heading" data-id="e82ad17" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-1b8ee67 cat-cab elementor-widget elementor-widget-heading" data-id="1b8ee67" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">TEAM</div>				</div>
-				<div class="elementor-element elementor-element-1015b54 cat-meta elementor-widget elementor-widget-text-editor" data-id="1015b54" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-27152df cat-meta elementor-widget elementor-widget-text-editor" data-id="27152df" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Principal investigator to be defined, by call or invitation, to coordinate the front; public call for two postdoctoral researchers, one in 2026, funded by the partnership, and another from 2027, funded by agencies and other partners.</p>								</div>
-				<div class="elementor-element elementor-element-bedef7b cat-cab elementor-widget elementor-widget-heading" data-id="bedef7b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-24db86a cat-cab elementor-widget elementor-widget-heading" data-id="24db86a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNERSHIPS</div>				</div>
-				<div class="elementor-element elementor-element-72ae33c cat-meta elementor-widget elementor-widget-text-editor" data-id="72ae33c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-6dcb3ac cat-meta elementor-widget elementor-widget-text-editor" data-id="6dcb3ac" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>CGI.br, OBIA, PBIA, Ministry of Health and FGV DAPP</p>								</div>
 				</div>
 				</div>

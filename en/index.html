@@ -185,6 +185,18 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* pessoas: cards com a tipografia da designer; aqui só o que ela não tinha (instituição, links, ficha, biografia) */
 		body .elementor .cat-foto.foto-martelada::before{background-image:inherit} /* efeito "martelado" no hover sem precisar de uma classe pessoa-N por foto */
 		body .elementor .cat-pessoa .elementor-heading-title a:hover{color:var(--cat-suave)}
+		/* pessoas: cards centrados, colunas largas e fileiras incompletas no meio da página, sem texto justificado */
+		body .elementor .cat-fileira-pessoas>.e-con-inner,body .elementor .cat-fileira-pessoas{align-items:center}
+		body .elementor .cat-fileira-pessoas>.cat-cab,body .elementor .cat-fileira-pessoas>.e-con-inner>.cat-cab{text-align:center;align-self:stretch}
+		body .elementor .cat-grade-pessoas,body .elementor .cat-grade-pessoas>.e-con-inner{display:flex!important;flex-wrap:wrap;justify-content:center;gap:80px 48px!important;width:100%}
+		body .elementor .cat-grade-pessoas .cat-pessoa{flex:0 0 calc((100% - 4*48px)/5)!important;width:auto!important;max-width:calc((100% - 4*48px)/5);align-items:center;text-align:center}
+		body .elementor .cat-pessoa>.e-con-inner{align-items:center}
+		body .elementor .cat-pessoa .elementor-widget{align-self:stretch;text-align:center}
+		body .elementor .cat-pessoa .elementor-heading-title,body .elementor .cat-pessoa p{text-align:center!important;word-spacing:normal!important}
+		body .elementor .cat-pessoa .elementor-widget-image img{margin:0 auto 10px}
+		body .elementor .cat-pessoa .e-con,body .elementor .cat-pessoa ul,body .elementor .cat-pessoa .elementor-icon-list-items{justify-content:center!important}
+		@media(max-width:1024px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:calc((100% - 2*48px)/3)!important;max-width:calc((100% - 2*48px)/3)}}
+		@media(max-width:767px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:100%!important;max-width:320px}}
 		/* ritmo dos cards: foto redonda com anel de textura e filete claro, nome compacto, colunas pares escalonadas */
 		body .elementor .e-con.cat-foto-anel{border-radius:50%;aspect-ratio:1/1;margin-bottom:14px}
 		body .elementor .e-con.cat-foto-anel .cat-foto{border-radius:50%;box-shadow:0 0 0 2px var(--cat-fundo)}
@@ -305,7 +317,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					}
 				}
 			</style>
-			<style id="wp-custom-css">
+			<link rel="icon" href="../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-150x150.png" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<meta name="msapplication-TileImage" content="../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<style id="wp-custom-css">
 .card-integrante {
     aspect-ratio: 1 / 1 !important;
     width: 100% !important;
@@ -495,7 +511,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-e0d744c cat-idiomas-box elementor-widget elementor-widget-html" data-id="e0d744c" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-f431e0a cat-idiomas-box elementor-widget elementor-widget-html" data-id="f431e0a" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Language"><a href="../index.html" lang="pt" hreflang="pt">PT</a><a href="index.html" lang="en" hreflang="en" class="ativo" aria-current="true">EN</a><a href="../es/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>
@@ -516,49 +532,49 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									<p>Between the potential of Artificial Intelligence,<br>the risks and social responsibility</p>								</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-90cce78 e-con-boxed cat-parceiros e-flex e-con e-parent" data-id="90cce78" data-element_type="container" data-e-type="container" id="parceiros" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-351b9ff e-con-boxed cat-parceiros e-flex e-con e-parent" data-id="351b9ff" data-element_type="container" data-e-type="container" id="parceiros" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-0d5a784 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="0d5a784" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-568de25 e-con-full cat-textura cat-fixa e-flex e-con e-child" data-id="568de25" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
-		<div class="elementor-element elementor-element-208df80 e-con-full cat-parceiros-linha e-flex e-con e-child" data-id="208df80" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-e0e3a52 e-con-full cat-logos e-flex e-con e-child" data-id="e0e3a52" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-b4d0cb9 cat-cab cat-logo-rotulo elementor-widget elementor-widget-heading" data-id="b4d0cb9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-2bec87e e-con-full cat-parceiros-linha e-flex e-con e-child" data-id="2bec87e" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-3b57fb5 e-con-full cat-logos e-flex e-con e-child" data-id="3b57fb5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-29b2584 cat-cab cat-logo-rotulo elementor-widget elementor-widget-heading" data-id="29b2584" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">PARTNER</div>				</div>
-				<div class="elementor-element elementor-element-7f33347 cat-logo cat-logo-parceira elementor-widget elementor-widget-image" data-id="7f33347" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-c69a288 cat-logo cat-logo-parceira elementor-widget elementor-widget-image" data-id="c69a288" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://www.google.com/" target="_blank">
 							<img decoding="async" width="300" height="125" src="../wp-content/uploads/2026/06/Google-logo-300x125.png" class="attachment-medium size-medium wp-image-1545" alt="" srcset="../wp-content/uploads/2026/06/Google-logo-300x125.png 300w, ../wp-content/uploads/2026/06/Google-logo-1024x427.png 1024w, ../wp-content/uploads/2026/06/Google-logo-768x320.png 768w, ../wp-content/uploads/2026/06/Google-logo-1536x640.png 1536w, ../wp-content/uploads/2026/06/Google-logo-2048x853.png 2048w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
 				</div>
-		<div class="elementor-element elementor-element-59a9d7e e-con-full cat-logos e-flex e-con e-child" data-id="59a9d7e" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-237b24f cat-cab cat-logo-rotulo elementor-widget elementor-widget-heading" data-id="237b24f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-faeae71 e-con-full cat-logos e-flex e-con e-child" data-id="faeae71" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f09ae95 cat-cab cat-logo-rotulo elementor-widget elementor-widget-heading" data-id="f09ae95" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">WITH THE SUPPORT OF</div>				</div>
-				<div class="elementor-element elementor-element-9495ad8 cat-logo elementor-widget elementor-widget-image" data-id="9495ad8" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-9978293 cat-logo elementor-widget elementor-widget-image" data-id="9978293" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://www.nic.br/" target="_blank">
 							<img decoding="async" width="300" height="162" src="../wp-content/uploads/2026/09/parceiro-nicbr-300x162.png" class="attachment-medium size-medium wp-image-1832" alt="NIC.br" srcset="../wp-content/uploads/2026/09/parceiro-nicbr-300x162.png 300w, ../wp-content/uploads/2026/09/parceiro-nicbr.png 694w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
-				<div class="elementor-element elementor-element-51b2345 cat-logo elementor-widget elementor-widget-image" data-id="51b2345" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-ecbe54c cat-logo elementor-widget elementor-widget-image" data-id="ecbe54c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://ircai.org/" target="_blank">
 							<img loading="lazy" decoding="async" width="300" height="128" src="../wp-content/uploads/2026/09/parceiro-ircai-300x128.png" class="attachment-medium size-medium wp-image-1833" alt="IRCAI – International Research Centre on Artificial Intelligence" srcset="../wp-content/uploads/2026/09/parceiro-ircai-300x128.png 300w, ../wp-content/uploads/2026/09/parceiro-ircai.png 666w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
-				<div class="elementor-element elementor-element-425da8d elementor-widget elementor-widget-html" data-id="425da8d" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-2227851 elementor-widget elementor-widget-html" data-id="2227851" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<a class="cat-logo-lockup" href="https://direitosp.fgv.br/" target="_blank" rel="noopener"><img decoding="async" src="../wp-content/uploads/2026/09/parceiro-fgv-300x54.png" alt="FGV"><span>DIREITO SP</span></a>				</div>
-				<div class="elementor-element elementor-element-9b65bb1 cat-logo cat-logo-cepid elementor-widget elementor-widget-image" data-id="9b65bb1" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-0324813 cat-logo cat-logo-cepid elementor-widget elementor-widget-image" data-id="0324813" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://cepidbridge.fea.usp.br/" target="_blank">
 							<img loading="lazy" decoding="async" width="300" height="89" src="../wp-content/uploads/2026/09/parceiro-cepid-bridge-300x89.png" class="attachment-medium size-medium wp-image-1845" alt="CEPID Bridge – Building Radical Innovation &amp; Disruption for Global Ecosystems" srcset="../wp-content/uploads/2026/09/parceiro-cepid-bridge-300x89.png 300w, ../wp-content/uploads/2026/09/parceiro-cepid-bridge-768x227.png 768w, ../wp-content/uploads/2026/09/parceiro-cepid-bridge.png 786w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
-				<div class="elementor-element elementor-element-98f5ade cat-logo cat-logo-anker elementor-widget elementor-widget-image" data-id="98f5ade" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-adc6cdc cat-logo cat-logo-anker elementor-widget elementor-widget-image" data-id="adc6cdc" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 																<a href="https://www.ankerresearchinstitute.org/" target="_blank">
 							<img loading="lazy" decoding="async" width="300" height="220" src="../wp-content/uploads/2026/09/parceiro-anker-300x220.png" class="attachment-medium size-medium wp-image-1849" alt="Anker Research Institute" srcset="../wp-content/uploads/2026/09/parceiro-anker-300x220.png 300w, ../wp-content/uploads/2026/09/parceiro-anker.png 391w" sizes="(max-width: 300px) 100vw, 300px" />								</a>
 															</div>
-				<div class="elementor-element elementor-element-10fa329 cat-logo-texto elementor-widget elementor-widget-heading" data-id="10fa329" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-868b76e cat-logo-texto elementor-widget elementor-widget-heading" data-id="868b76e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.gov.br/saude/" target="_blank">MINISTÉRIO<br>DA SAÚDE</a></div>				</div>
-				<div class="elementor-element elementor-element-d32cb16 cat-logo-texto elementor-widget elementor-widget-heading" data-id="d32cb16" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-de039b3 cat-logo-texto elementor-widget elementor-widget-heading" data-id="de039b3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default"><a href="https://www.gov.br/gestao/" target="_blank">MINISTÉRIO DA GESTÃO<br>E DA INOVAÇÃO EM<br>SERVIÇOS PÚBLICOS</a></div>				</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-fc586f7 e-con-full cat-faixa-destaque lente-viva e-flex e-con e-parent" data-id="fc586f7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d74ff6f e-con-full cat-faixa-destaque lente-viva e-flex e-con e-parent" data-id="d74ff6f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 		<div class="elementor-element elementor-element-f57165a e-flex e-con-boxed e-con e-parent" data-id="f57165a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">

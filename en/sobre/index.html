@@ -183,6 +183,18 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* pessoas: cards com a tipografia da designer; aqui só o que ela não tinha (instituição, links, ficha, biografia) */
 		body .elementor .cat-foto.foto-martelada::before{background-image:inherit} /* efeito "martelado" no hover sem precisar de uma classe pessoa-N por foto */
 		body .elementor .cat-pessoa .elementor-heading-title a:hover{color:var(--cat-suave)}
+		/* pessoas: cards centrados, colunas largas e fileiras incompletas no meio da página, sem texto justificado */
+		body .elementor .cat-fileira-pessoas>.e-con-inner,body .elementor .cat-fileira-pessoas{align-items:center}
+		body .elementor .cat-fileira-pessoas>.cat-cab,body .elementor .cat-fileira-pessoas>.e-con-inner>.cat-cab{text-align:center;align-self:stretch}
+		body .elementor .cat-grade-pessoas,body .elementor .cat-grade-pessoas>.e-con-inner{display:flex!important;flex-wrap:wrap;justify-content:center;gap:80px 48px!important;width:100%}
+		body .elementor .cat-grade-pessoas .cat-pessoa{flex:0 0 calc((100% - 4*48px)/5)!important;width:auto!important;max-width:calc((100% - 4*48px)/5);align-items:center;text-align:center}
+		body .elementor .cat-pessoa>.e-con-inner{align-items:center}
+		body .elementor .cat-pessoa .elementor-widget{align-self:stretch;text-align:center}
+		body .elementor .cat-pessoa .elementor-heading-title,body .elementor .cat-pessoa p{text-align:center!important;word-spacing:normal!important}
+		body .elementor .cat-pessoa .elementor-widget-image img{margin:0 auto 10px}
+		body .elementor .cat-pessoa .e-con,body .elementor .cat-pessoa ul,body .elementor .cat-pessoa .elementor-icon-list-items{justify-content:center!important}
+		@media(max-width:1024px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:calc((100% - 2*48px)/3)!important;max-width:calc((100% - 2*48px)/3)}}
+		@media(max-width:767px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:100%!important;max-width:320px}}
 		/* ritmo dos cards: foto redonda com anel de textura e filete claro, nome compacto, colunas pares escalonadas */
 		body .elementor .e-con.cat-foto-anel{border-radius:50%;aspect-ratio:1/1;margin-bottom:14px}
 		body .elementor .e-con.cat-foto-anel .cat-foto{border-radius:50%;box-shadow:0 0 0 2px var(--cat-fundo)}
@@ -303,7 +315,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					}
 				}
 			</style>
-			<style id="wp-custom-css">
+			<link rel="icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-150x150.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<meta name="msapplication-TileImage" content="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<style id="wp-custom-css">
 .card-integrante {
     aspect-ratio: 1 / 1 !important;
     width: 100% !important;
@@ -493,7 +509,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-c4dbab7 cat-idiomas-box elementor-widget elementor-widget-html" data-id="c4dbab7" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-dfb9eeb cat-idiomas-box elementor-widget elementor-widget-html" data-id="dfb9eeb" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Language"><a href="../../sobre/index.html" lang="pt" hreflang="pt">PT</a><a href="index.html" lang="en" hreflang="en" class="ativo" aria-current="true">EN</a><a href="../../es/sobre/index.html" lang="es" hreflang="es">ES</a></nav>				</div>
 					</div>
 				</div>

@@ -183,6 +183,18 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		/* pessoas: cards com a tipografia da designer; aqui só o que ela não tinha (instituição, links, ficha, biografia) */
 		body .elementor .cat-foto.foto-martelada::before{background-image:inherit} /* efeito "martelado" no hover sem precisar de uma classe pessoa-N por foto */
 		body .elementor .cat-pessoa .elementor-heading-title a:hover{color:var(--cat-suave)}
+		/* pessoas: cards centrados, colunas largas e fileiras incompletas no meio da página, sem texto justificado */
+		body .elementor .cat-fileira-pessoas>.e-con-inner,body .elementor .cat-fileira-pessoas{align-items:center}
+		body .elementor .cat-fileira-pessoas>.cat-cab,body .elementor .cat-fileira-pessoas>.e-con-inner>.cat-cab{text-align:center;align-self:stretch}
+		body .elementor .cat-grade-pessoas,body .elementor .cat-grade-pessoas>.e-con-inner{display:flex!important;flex-wrap:wrap;justify-content:center;gap:80px 48px!important;width:100%}
+		body .elementor .cat-grade-pessoas .cat-pessoa{flex:0 0 calc((100% - 4*48px)/5)!important;width:auto!important;max-width:calc((100% - 4*48px)/5);align-items:center;text-align:center}
+		body .elementor .cat-pessoa>.e-con-inner{align-items:center}
+		body .elementor .cat-pessoa .elementor-widget{align-self:stretch;text-align:center}
+		body .elementor .cat-pessoa .elementor-heading-title,body .elementor .cat-pessoa p{text-align:center!important;word-spacing:normal!important}
+		body .elementor .cat-pessoa .elementor-widget-image img{margin:0 auto 10px}
+		body .elementor .cat-pessoa .e-con,body .elementor .cat-pessoa ul,body .elementor .cat-pessoa .elementor-icon-list-items{justify-content:center!important}
+		@media(max-width:1024px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:calc((100% - 2*48px)/3)!important;max-width:calc((100% - 2*48px)/3)}}
+		@media(max-width:767px){body .elementor .cat-grade-pessoas .cat-pessoa{flex-basis:100%!important;max-width:320px}}
 		/* ritmo dos cards: foto redonda com anel de textura e filete claro, nome compacto, colunas pares escalonadas */
 		body .elementor .e-con.cat-foto-anel{border-radius:50%;aspect-ratio:1/1;margin-bottom:14px}
 		body .elementor .e-con.cat-foto-anel .cat-foto{border-radius:50%;box-shadow:0 0 0 2px var(--cat-fundo)}
@@ -303,7 +315,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					}
 				}
 			</style>
-			<style id="wp-custom-css">
+			<link rel="icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-150x150.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<meta name="msapplication-TileImage" content="../../wp-content/uploads/2026/06/Logo-padrao-reduzida-sem-texto-300x300.png" />
+<style id="wp-custom-css">
 .card-integrante {
     aspect-ratio: 1 / 1 !important;
     width: 100% !important;
@@ -493,187 +509,187 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-89d6ae4 cat-idiomas-box elementor-widget elementor-widget-html" data-id="89d6ae4" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-1c475f3 cat-idiomas-box elementor-widget elementor-widget-html" data-id="1c475f3" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Idioma"><a href="../../pessoas/index.html" lang="pt" hreflang="pt">PT</a><a href="../../en/pessoas/index.html" lang="en" hreflang="en">EN</a><a href="index.html" lang="es" hreflang="es" class="ativo" aria-current="true">ES</a></nav>				</div>
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-29f7b86 e-con-boxed e-flex e-con e-parent" data-id="29f7b86" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5ca9136 e-con-boxed e-flex e-con e-parent" data-id="5ca9136" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-fa100e0 elementor-widget elementor-widget-heading" data-id="fa100e0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-adf5283 elementor-widget elementor-widget-heading" data-id="adf5283" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h1 class="elementor-heading-title elementor-size-default">PERSONAS</h1>				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-2ac5bac e-con-boxed e-flex e-con e-parent" data-id="2ac5bac" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-cdaa626 e-con-boxed e-flex e-con e-parent" data-id="cdaa626" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-1adf1b4 e-con-full e-flex e-con e-child" data-id="1adf1b4" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-32fdb2b cat-cab elementor-widget elementor-widget-heading" data-id="32fdb2b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-0b27f35 e-con-full cat-fileira-pessoas e-flex e-con e-child" data-id="0b27f35" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2e0816d cat-cab elementor-widget elementor-widget-heading" data-id="2e0816d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">COORDINACIÓN</div>				</div>
-		<div class="elementor-element elementor-element-c941c60 e-grid e-con-full e-con e-child" data-id="c941c60" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-b9fe735 e-con-full cat-pessoa e-flex e-con e-child" data-id="b9fe735" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-10c20e6 e-con-full cat-foto-anel e-flex e-con e-child" data-id="10c20e6" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-8c31540 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="8c31540" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-2ab1abe e-grid e-con-full cat-grade-pessoas e-con e-child" data-id="2ab1abe" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-a38d978 e-con-full cat-pessoa e-flex e-con e-child" data-id="a38d978" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-882df2a e-con-full cat-foto-anel e-flex e-con e-child" data-id="882df2a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-8429ea5 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="8429ea5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-87f1892 elementor-widget elementor-widget-heading" data-id="87f1892" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-2400e35 elementor-widget elementor-widget-heading" data-id="2400e35" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Catedrático</h2>				</div>
-				<div class="elementor-element elementor-element-9593aa6 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="9593aa6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-c4402be cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="c4402be" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="carlos-americo-pacheco/index.html">Carlos Américo Pacheco</a></h2>				</div>
-				<div class="elementor-element elementor-element-fc7feb6 elementor-widget elementor-widget-heading" data-id="fc7feb6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-c45cf1a elementor-widget elementor-widget-heading" data-id="c45cf1a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Políticas de innovación e IA Responsable. Formación de recursos humanos en STEM y para IA. Impactos sociales y económicos del uso de la IA en Brasil.</h2>				</div>
-				<div class="elementor-element elementor-element-e8a7e6b cat-links elementor-widget elementor-widget-text-editor" data-id="e8a7e6b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-49f17f7 cat-links elementor-widget elementor-widget-text-editor" data-id="49f17f7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><a href="http://lattes.cnpq.br/5717710762975833" target="_blank" rel="noopener">LATTES</a></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-f11f9d8 e-con-full cat-pessoa e-flex e-con e-child" data-id="f11f9d8" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-74a1191 e-con-full cat-foto-anel e-flex e-con e-child" data-id="74a1191" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-281999c e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="281999c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-187b824 e-con-full cat-pessoa e-flex e-con e-child" data-id="187b824" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-b5566a5 e-con-full cat-foto-anel e-flex e-con e-child" data-id="b5566a5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d4c8e9a e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="d4c8e9a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-520195e elementor-widget elementor-widget-heading" data-id="520195e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-0e9261f elementor-widget elementor-widget-heading" data-id="0e9261f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Coordinador de la Cátedra</h2>				</div>
-				<div class="elementor-element elementor-element-5aa2b9f cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="5aa2b9f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-271501c cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="271501c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="glauco-arbix/index.html">Glauco Arbix</a></h2>				</div>
-				<div class="elementor-element elementor-element-e224824 elementor-widget elementor-widget-heading" data-id="e224824" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-6c6010f elementor-widget elementor-widget-heading" data-id="6c6010f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Sociología económica e industrial; tecnología, innovación, internacionalización e industrialización; inteligencia artificial y trabajo.</h2>				</div>
-				<div class="elementor-element elementor-element-b327eb4 cat-links elementor-widget elementor-widget-text-editor" data-id="b327eb4" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-5b1c8ed cat-links elementor-widget elementor-widget-text-editor" data-id="5b1c8ed" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><a href="http://lattes.cnpq.br/6513212204220783" target="_blank" rel="noopener">LATTES</a> · <a href="https://orcid.org/0000-0002-7078-4328" target="_blank" rel="noopener">ORCID</a></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-9fa300c e-con-full cat-pessoa e-flex e-con e-child" data-id="9fa300c" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-f0a17e2 e-con-full cat-foto-anel e-flex e-con e-child" data-id="f0a17e2" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-61e57db e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="61e57db" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-1af8288 e-con-full cat-pessoa e-flex e-con e-child" data-id="1af8288" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-9ea3a00 e-con-full cat-foto-anel e-flex e-con e-child" data-id="9ea3a00" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d72086b e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="d72086b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-7460274 elementor-widget elementor-widget-heading" data-id="7460274" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-cb3e5eb elementor-widget elementor-widget-heading" data-id="cb3e5eb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Investigadora coordinadora</h2>				</div>
-				<div class="elementor-element elementor-element-7f6a43c cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="7f6a43c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-35bcb1e cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="35bcb1e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="cristina-godoy-bernardo-de-oliveira/index.html">Cristina Godoy Bernardo de Oliveira</a></h2>				</div>
-				<div class="elementor-element elementor-element-44b047a elementor-widget elementor-widget-heading" data-id="44b047a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-e1a2e46 elementor-widget elementor-widget-heading" data-id="e1a2e46" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Derecho y Tecnología; Regulación y Gobernanza de IA; AI Safety; Ciberseguridad y Regulación de Infraestructura (IaaS).</h2>				</div>
-				<div class="elementor-element elementor-element-c50c4d0 cat-links elementor-widget elementor-widget-text-editor" data-id="c50c4d0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-50aa3a9 cat-links elementor-widget elementor-widget-text-editor" data-id="50aa3a9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><a href="http://lattes.cnpq.br/9184220537466009" target="_blank" rel="noopener">LATTES</a> · <a href="https://www.linkedin.com/in/cristina-godoy-bernardo-de-oliveira" target="_blank" rel="noopener">LINKEDIN</a></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-243c1f9 e-con-full cat-pessoa e-flex e-con e-child" data-id="243c1f9" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-124ffd3 e-con-full cat-foto-anel e-flex e-con e-child" data-id="124ffd3" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-fb9d73d e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="fb9d73d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-ebc0dcf e-con-full cat-pessoa e-flex e-con e-child" data-id="ebc0dcf" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-4286d1b e-con-full cat-foto-anel e-flex e-con e-child" data-id="4286d1b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-b6fd449 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="b6fd449" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-3fa3fb3 elementor-widget elementor-widget-heading" data-id="3fa3fb3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-08e39c8 elementor-widget elementor-widget-heading" data-id="08e39c8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Investigador coordinador</h2>				</div>
-				<div class="elementor-element elementor-element-f553903 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="f553903" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-a0afd12 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="a0afd12" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="ian-prates/index.html">Ian Prates</a></h2>				</div>
-				<div class="elementor-element elementor-element-c1d3ac9 elementor-widget elementor-widget-heading" data-id="c1d3ac9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-71c9567 elementor-widget elementor-widget-heading" data-id="71c9567" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Mercado de trabajo, tecnología, pobreza, movilidad social y políticas públicas.</h2>				</div>
-				<div class="elementor-element elementor-element-7add066 cat-links elementor-widget elementor-widget-text-editor" data-id="7add066" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-f2e68af cat-links elementor-widget elementor-widget-text-editor" data-id="f2e68af" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4296000D4" target="_blank" rel="noopener">LATTES</a> · <a href="https://www.linkedin.com/in/ian-prates-423a541b9/" target="_blank" rel="noopener">LINKEDIN</a></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-3119c0b e-con-full cat-pessoa e-flex e-con e-child" data-id="3119c0b" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-2bc8ef7 e-con-full cat-foto-anel e-flex e-con e-child" data-id="2bc8ef7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-7244864 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="7244864" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d293d4b e-con-full cat-pessoa e-flex e-con e-child" data-id="d293d4b" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-aca82f8 e-con-full cat-foto-anel e-flex e-con e-child" data-id="aca82f8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-f482d17 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="f482d17" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-73e9383 elementor-widget elementor-widget-heading" data-id="73e9383" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-551c2a0 elementor-widget elementor-widget-heading" data-id="551c2a0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Investigador coordinador</h2>				</div>
-				<div class="elementor-element elementor-element-3e7aca1 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="3e7aca1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-85bc098 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="85bc098" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="rodrigo-brandao/index.html">Rodrigo Brandão</a></h2>				</div>
-				<div class="elementor-element elementor-element-e32de86 elementor-widget elementor-widget-heading" data-id="e32de86" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-6f73edf elementor-widget elementor-widget-heading" data-id="6f73edf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Gobernanza y regulación de la IA en el sector público; reconocimiento facial; tecnologías emergentes y mercado de trabajo.</h2>				</div>
-				<div class="elementor-element elementor-element-29205d3 cat-links elementor-widget elementor-widget-text-editor" data-id="29205d3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-30d31f0 cat-links elementor-widget elementor-widget-text-editor" data-id="30d31f0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><a href="http://lattes.cnpq.br/0232792301572399" target="_blank" rel="noopener">LATTES</a> · <a href="https://www.linkedin.com/in/rodrigo-brand%C3%A3o-0ba42024/" target="_blank" rel="noopener">LINKEDIN</a></p>								</div>
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-806631d e-con-full e-flex e-con e-child" data-id="806631d" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-0153098 cat-cab elementor-widget elementor-widget-heading" data-id="0153098" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-3bd7654 e-con-full cat-fileira-pessoas e-flex e-con e-child" data-id="3bd7654" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2d5f958 cat-cab elementor-widget elementor-widget-heading" data-id="2d5f958" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">INVESTIGADORES</div>				</div>
-		<div class="elementor-element elementor-element-978a830 e-grid e-con-full e-con e-child" data-id="978a830" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-87a5332 e-con-full cat-pessoa e-flex e-con e-child" data-id="87a5332" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-8b2dbd7 e-con-full cat-foto-anel e-flex e-con e-child" data-id="8b2dbd7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-8b4d558 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="8b4d558" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-311a344 e-grid e-con-full cat-grade-pessoas e-con e-child" data-id="311a344" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-cfd382e e-con-full cat-pessoa e-flex e-con e-child" data-id="cfd382e" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-0990df0 e-con-full cat-foto-anel e-flex e-con e-child" data-id="0990df0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-e6078c2 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="e6078c2" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-1395471 elementor-widget elementor-widget-heading" data-id="1395471" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-3448f56 elementor-widget elementor-widget-heading" data-id="3448f56" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Investigador</h2>				</div>
-				<div class="elementor-element elementor-element-16b2699 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="16b2699" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-2622f3c cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="2622f3c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="bruno-castro-dias-da-fonseca/index.html">Bruno Castro Dias da Fonseca</a></h2>				</div>
-				<div class="elementor-element elementor-element-2bf931a elementor-widget elementor-widget-heading" data-id="2bf931a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-833fbc7 elementor-widget elementor-widget-heading" data-id="833fbc7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Auditoría de algoritmos; IA Responsable; observabilidad de sistemas de machine learning; IA en el sector público.</h2>				</div>
-				<div class="elementor-element elementor-element-25ab206 cat-links elementor-widget elementor-widget-text-editor" data-id="25ab206" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-5d5c9d1 cat-links elementor-widget elementor-widget-text-editor" data-id="5d5c9d1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8649266H8" target="_blank" rel="noopener">LATTES</a></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-ccb5423 e-con-full cat-pessoa e-flex e-con e-child" data-id="ccb5423" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-332e532 e-con-full cat-foto-anel e-flex e-con e-child" data-id="332e532" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-a7432d5 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="a7432d5" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-089549d e-con-full cat-pessoa e-flex e-con e-child" data-id="089549d" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-ca3207c e-con-full cat-foto-anel e-flex e-con e-child" data-id="ca3207c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-63769cc e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="63769cc" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-5a20174 elementor-widget elementor-widget-heading" data-id="5a20174" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-e429e66 elementor-widget elementor-widget-heading" data-id="e429e66" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Investigador</h2>				</div>
-				<div class="elementor-element elementor-element-5bbe223 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="5bbe223" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-acd251e cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="acd251e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="mateus-henrique-amorim-moura-rocha/index.html">Mateus Henrique Amorim Moura Rocha</a></h2>				</div>
-				<div class="elementor-element elementor-element-47c3373 elementor-widget elementor-widget-heading" data-id="47c3373" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-5dc5db1 elementor-widget elementor-widget-heading" data-id="5dc5db1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Sector público, futuro del trabajo, inteligencia artificial, Poder Judicial.</h2>				</div>
-				<div class="elementor-element elementor-element-5ee1551 cat-links elementor-widget elementor-widget-text-editor" data-id="5ee1551" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-f948edf cat-links elementor-widget elementor-widget-text-editor" data-id="f948edf" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><a href="http://lattes.cnpq.br/7855222166455048" target="_blank" rel="noopener">LATTES</a> · <a href="https://www.linkedin.com/in/mateus-h-amorim/" target="_blank" rel="noopener">LINKEDIN</a></p>								</div>
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-83e1131 e-con-full e-flex e-con e-child" data-id="83e1131" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-263307e cat-cab elementor-widget elementor-widget-heading" data-id="263307e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-00df118 e-con-full cat-fileira-pessoas e-flex e-con e-child" data-id="00df118" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5f45a5f cat-cab elementor-widget elementor-widget-heading" data-id="5f45a5f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<div class="elementor-heading-title elementor-size-default">CONSEJEROS</div>				</div>
-		<div class="elementor-element elementor-element-52faa8f e-grid e-con-full e-con e-child" data-id="52faa8f" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-ebb393f e-con-full cat-pessoa e-flex e-con e-child" data-id="ebb393f" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-94b9329 e-con-full cat-foto-anel e-flex e-con e-child" data-id="94b9329" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-f90dac9 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="f90dac9" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-706e0df e-grid e-con-full cat-grade-pessoas e-con e-child" data-id="706e0df" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-e4a68a7 e-con-full cat-pessoa e-flex e-con e-child" data-id="e4a68a7" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-8219206 e-con-full cat-foto-anel e-flex e-con e-child" data-id="8219206" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-bdcd218 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="bdcd218" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-e9c5932 elementor-widget elementor-widget-heading" data-id="e9c5932" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-0a40e0b elementor-widget elementor-widget-heading" data-id="0a40e0b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Consejero</h2>				</div>
-				<div class="elementor-element elementor-element-3c38c1f cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="3c38c1f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-c96e9c5 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="c96e9c5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="caio-magri/index.html">Caio Magri</a></h2>				</div>
-				<div class="elementor-element elementor-element-9cd9104 elementor-widget elementor-widget-heading" data-id="9cd9104" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-0d7483e elementor-widget elementor-widget-heading" data-id="0d7483e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Integridad empresarial, desinformación e integridad informacional.</h2>				</div>
-				<div class="elementor-element elementor-element-a678214 cat-links elementor-widget elementor-widget-text-editor" data-id="a678214" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-432b13f cat-links elementor-widget elementor-widget-text-editor" data-id="432b13f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-428cf76 e-con-full cat-pessoa e-flex e-con e-child" data-id="428cf76" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-46a02a2 e-con-full cat-foto-anel e-flex e-con e-child" data-id="46a02a2" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-4086814 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="4086814" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-6f6f3b1 e-con-full cat-pessoa e-flex e-con e-child" data-id="6f6f3b1" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-b6c9c39 e-con-full cat-foto-anel e-flex e-con e-child" data-id="b6c9c39" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-56e30b9 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="56e30b9" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-787d762 elementor-widget elementor-widget-heading" data-id="787d762" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-fd08d91 elementor-widget elementor-widget-heading" data-id="fd08d91" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Consejero</h2>				</div>
-				<div class="elementor-element elementor-element-d103d44 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="d103d44" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-40b3e7a cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="40b3e7a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="adrian-gurza-lavalle/index.html">Adrian Gurza Lavalle</a></h2>				</div>
-				<div class="elementor-element elementor-element-4bf992d elementor-widget elementor-widget-heading" data-id="4bf992d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-107302b elementor-widget elementor-widget-heading" data-id="107302b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Participación, asociativismo y confrontación política; teoría democrática y representación.</h2>				</div>
-				<div class="elementor-element elementor-element-a17f1c0 cat-links elementor-widget elementor-widget-text-editor" data-id="a17f1c0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-62d2b22 cat-links elementor-widget elementor-widget-text-editor" data-id="62d2b22" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-54f223f e-con-full cat-pessoa e-flex e-con e-child" data-id="54f223f" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-57eda54 e-con-full cat-foto-anel e-flex e-con e-child" data-id="57eda54" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-d47c4e8 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="d47c4e8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d4fce2e e-con-full cat-pessoa e-flex e-con e-child" data-id="d4fce2e" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-fd8153d e-con-full cat-foto-anel e-flex e-con e-child" data-id="fd8153d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-0ff2702 e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="0ff2702" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-fbbae20 elementor-widget elementor-widget-heading" data-id="fbbae20" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-7038011 elementor-widget elementor-widget-heading" data-id="7038011" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Consejero</h2>				</div>
-				<div class="elementor-element elementor-element-4293e86 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="4293e86" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-5a1384d cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="5a1384d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="denis-virissimo/index.html">Denis Viríssimo</a></h2>				</div>
-				<div class="elementor-element elementor-element-918cffc elementor-widget elementor-widget-heading" data-id="918cffc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-c34da9d elementor-widget elementor-widget-heading" data-id="c34da9d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Tecnologías digitales e inteligencia artificial aplicada a la industria.</h2>				</div>
-				<div class="elementor-element elementor-element-3f0c154 cat-links elementor-widget elementor-widget-text-editor" data-id="3f0c154" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-0af1f85 cat-links elementor-widget elementor-widget-text-editor" data-id="0af1f85" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p></p>								</div>
 				</div>
-		<div class="elementor-element elementor-element-ff9d5fe e-con-full cat-pessoa e-flex e-con e-child" data-id="ff9d5fe" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-56cc089 e-con-full cat-foto-anel e-flex e-con e-child" data-id="56cc089" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-e086efb e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="e086efb" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-c7bc313 e-con-full cat-pessoa e-flex e-con e-child" data-id="c7bc313" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-06dbde1 e-con-full cat-foto-anel e-flex e-con e-child" data-id="06dbde1" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-292295c e-con-full card-integrante foto-martelada cat-foto e-flex e-con e-child" data-id="292295c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-c45b945 elementor-widget elementor-widget-heading" data-id="c45b945" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-0a61089 elementor-widget elementor-widget-heading" data-id="0a61089" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Consejero</h2>				</div>
-				<div class="elementor-element elementor-element-610aa18 cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="610aa18" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-735ea9f cat-pessoa-nome elementor-widget elementor-widget-heading" data-id="735ea9f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><a href="carlos-torres-freire/index.html">Carlos Torres Freire</a></h2>				</div>
-				<div class="elementor-element elementor-element-90c89c8 elementor-widget elementor-widget-heading" data-id="90c89c8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-5da2a64 elementor-widget elementor-widget-heading" data-id="5da2a64" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Métodos de investigación, ciencia de datos y estadísticas públicas.</h2>				</div>
-				<div class="elementor-element elementor-element-51e53b0 cat-links elementor-widget elementor-widget-text-editor" data-id="51e53b0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-d49758a cat-links elementor-widget elementor-widget-text-editor" data-id="d49758a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p></p>								</div>
 				</div>
 				</div>
