@@ -104,10 +104,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		body .elementor .cat-ficha-evento strong{font-weight:700;color:var(--cat-suave)}
 		body .elementor .cat-dia .elementor-heading-title{font:200 64px/1 "Nunito Sans",sans-serif;color:var(--cat-tinta)}
 		body .elementor .cat-ano-titulo .elementor-heading-title{font:900 15px "Nunito Sans",sans-serif;letter-spacing:8px;color:var(--cat-cinza);margin-bottom:8px}
-		body .elementor .cat-painel-escuro{background:rgba(35,36,33,.92);backdrop-filter:blur(2px)}
-		body .elementor .cat-painel-escuro .cat-tag .elementor-heading-title{color:var(--cat-cinza)}
-		body .elementor .cat-destaque-titulo .elementor-heading-title{font:800 34px/1.2 "Nunito Sans",sans-serif;color:var(--cat-fundo)}
-		body .elementor .cat-painel-escuro .cat-meta,body .elementor .cat-painel-escuro .cat-link .elementor-heading-title{color:var(--cat-fundo)}
+		/* eventos: destaque em texto escuro sobre o fundo claro, ao lado das colunas de textura (como Acervo e Manifesto) */
+		body .elementor .cat-destaque{border-left:1px solid var(--cat-linha);max-width:720px}
+		body .elementor .cat-destaque-titulo .elementor-heading-title{font:900 38px/1.15 "Nunito Sans",sans-serif;color:var(--cat-tinta)}
+		body .elementor .cat-destaque .cat-meta{font-size:17px;line-height:1.65}
+		@media(max-width:767px){body .elementor .cat-destaque{border-left:0;padding-left:0!important}}
 
 		/* blog: notícias — o mês em tipo grande preenchido com a textura, como a aspa de Na mídia; recortes diferentes por item */
 		body .elementor .cat-noticia{border-top:1px solid var(--cat-linha)}
@@ -492,7 +493,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-e440bfa cat-idiomas-box elementor-widget elementor-widget-html" data-id="e440bfa" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-c4dbab7 cat-idiomas-box elementor-widget elementor-widget-html" data-id="c4dbab7" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Idioma"><a href="../../sobre/index.html" lang="pt" hreflang="pt">PT</a><a href="../../en/sobre/index.html" lang="en" hreflang="en">EN</a><a href="index.html" lang="es" hreflang="es" class="ativo" aria-current="true">ES</a></nav>				</div>
 					</div>
 				</div>

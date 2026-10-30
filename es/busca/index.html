@@ -104,10 +104,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		body .elementor .cat-ficha-evento strong{font-weight:700;color:var(--cat-suave)}
 		body .elementor .cat-dia .elementor-heading-title{font:200 64px/1 "Nunito Sans",sans-serif;color:var(--cat-tinta)}
 		body .elementor .cat-ano-titulo .elementor-heading-title{font:900 15px "Nunito Sans",sans-serif;letter-spacing:8px;color:var(--cat-cinza);margin-bottom:8px}
-		body .elementor .cat-painel-escuro{background:rgba(35,36,33,.92);backdrop-filter:blur(2px)}
-		body .elementor .cat-painel-escuro .cat-tag .elementor-heading-title{color:var(--cat-cinza)}
-		body .elementor .cat-destaque-titulo .elementor-heading-title{font:800 34px/1.2 "Nunito Sans",sans-serif;color:var(--cat-fundo)}
-		body .elementor .cat-painel-escuro .cat-meta,body .elementor .cat-painel-escuro .cat-link .elementor-heading-title{color:var(--cat-fundo)}
+		/* eventos: destaque em texto escuro sobre o fundo claro, ao lado das colunas de textura (como Acervo e Manifesto) */
+		body .elementor .cat-destaque{border-left:1px solid var(--cat-linha);max-width:720px}
+		body .elementor .cat-destaque-titulo .elementor-heading-title{font:900 38px/1.15 "Nunito Sans",sans-serif;color:var(--cat-tinta)}
+		body .elementor .cat-destaque .cat-meta{font-size:17px;line-height:1.65}
+		@media(max-width:767px){body .elementor .cat-destaque{border-left:0;padding-left:0!important}}
 
 		/* blog: notícias — o mês em tipo grande preenchido com a textura, como a aspa de Na mídia; recortes diferentes por item */
 		body .elementor .cat-noticia{border-top:1px solid var(--cat-linha)}
@@ -425,14 +426,14 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
 <body class="wp-singular page-template page-template-elementor_canvas page page-id-1879 page-child parent-pageid-1870 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-1879">
 			<div data-elementor-type="wp-page" data-elementor-id="1879" class="elementor elementor-1879">
-				<div class="elementor-element elementor-element-82db363 e-con-full e-flex e-con e-parent" data-id="82db363" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-43bbad8 e-flex e-con-boxed e-con e-child" data-id="43bbad8" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-657b5dc e-con-full e-flex e-con e-parent" data-id="657b5dc" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-df4362d e-flex e-con-boxed e-con e-child" data-id="df4362d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-70abceb e-con-full e-flex e-con e-child" data-id="70abceb" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-5a5acbe elementor-widget elementor-widget-image" data-id="5a5acbe" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-683903a e-con-full e-flex e-con e-child" data-id="683903a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-bf8ec6d elementor-widget elementor-widget-image" data-id="bf8ec6d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img fetchpriority="high" decoding="async" width="800" height="450" src="../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1024x576.png" class="attachment-large size-large wp-image-1828" alt="" srcset="../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1024x576.png 1024w, ../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-300x169.png 300w, ../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-768x432.png 768w, ../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-1536x864.png 1536w, ../../wp-content/uploads/2026/09/Logo-padrao-preferencial-USP-2048x1152.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
-				<div class="elementor-element elementor-element-6dd8b83 elementor-icon-list--layout-inline elementor-align-end elementor-widget__width-initial cat-menu elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6dd8b83" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-42ef123 elementor-icon-list--layout-inline elementor-align-end elementor-widget__width-initial cat-menu elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="42ef123" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
 											<a href="../index.html">
@@ -492,20 +493,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-317c2ea cat-idiomas-box elementor-widget elementor-widget-html" data-id="317c2ea" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-634be05 cat-idiomas-box elementor-widget elementor-widget-html" data-id="634be05" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
 					<nav class="cat-idiomas" aria-label="Idioma"><a href="../../busca/index.html" lang="pt" hreflang="pt">PT</a><a href="../../en/busca/index.html" lang="en" hreflang="en">EN</a><a href="index.html" lang="es" hreflang="es" class="ativo" aria-current="true">ES</a></nav>				</div>
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-26cddcd e-con-full e-flex e-con e-parent" data-id="26cddcd" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-cc4c8a7 e-flex e-con-boxed e-con e-child" data-id="cc4c8a7" data-element_type="container" data-e-type="container" id="busca" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<div class="elementor-element elementor-element-eed6fc3 e-con-full e-flex e-con e-parent" data-id="eed6fc3" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-99ff13f e-flex e-con-boxed e-con e-child" data-id="99ff13f" data-element_type="container" data-e-type="container" id="busca" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-4a5a0f0 e-con-full e-flex e-con e-child" data-id="4a5a0f0" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-d79fad0 elementor-widget elementor-widget-heading" data-id="d79fad0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-9cb14ee e-con-full e-flex e-con e-child" data-id="9cb14ee" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f48d2e9 elementor-widget elementor-widget-heading" data-id="f48d2e9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">BÚSQUEDA</h2>				</div>
 				</div>
-		<div class="elementor-element elementor-element-d947533 e-con-full e-flex e-con e-child" data-id="d947533" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-0c7debf elementor-widget elementor-widget-shortcode" data-id="0c7debf" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+		<div class="elementor-element elementor-element-c566a17 e-con-full e-flex e-con e-child" data-id="c566a17" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-011887f elementor-widget elementor-widget-shortcode" data-id="011887f" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
 							<div class="elementor-shortcode">	<form class="catedra-busca-form" role="search" method="get" action="index.html">
 		<label class="screen-reader-text" for="catedra-busca-termo">Buscar en el sitio</label>
 		<input id="catedra-busca-termo" type="search" name="termo"
@@ -518,24 +519,24 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-bb09b68 e-flex e-con-boxed e-con e-parent" data-id="bb09b68" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-97f7785 e-flex e-con-boxed e-con e-parent" data-id="97f7785" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-838e8df e-con-full e-flex e-con e-child" data-id="838e8df" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-9a0bce9 elementor-widget elementor-widget-image" data-id="9a0bce9" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-37ab333 e-con-full e-flex e-con e-child" data-id="37ab333" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f78355e elementor-widget elementor-widget-image" data-id="f78355e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img decoding="async" width="800" height="450" src="../../wp-content/uploads/2026/09/Logo-Negativa-USP-1024x576.png" class="attachment-large size-large wp-image-1829" alt="" srcset="../../wp-content/uploads/2026/09/Logo-Negativa-USP-1024x576.png 1024w, ../../wp-content/uploads/2026/09/Logo-Negativa-USP-300x169.png 300w, ../../wp-content/uploads/2026/09/Logo-Negativa-USP-768x432.png 768w, ../../wp-content/uploads/2026/09/Logo-Negativa-USP-1536x864.png 1536w, ../../wp-content/uploads/2026/09/Logo-Negativa-USP-2048x1152.png 2048w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
 				</div>
-				<div class="elementor-element elementor-element-275d735 elementor-widget elementor-widget-heading" data-id="275d735" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-ac1c86a elementor-widget elementor-widget-heading" data-id="ac1c86a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Este proyecto es una alianza entre</h2>				</div>
-		<div class="elementor-element elementor-element-cf996c1 e-con-full e-flex e-con e-child" data-id="cf996c1" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-6ea7083 elementor-widget elementor-widget-image" data-id="6ea7083" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-4a86b91 e-con-full e-flex e-con e-child" data-id="4a86b91" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8fe2039 elementor-widget elementor-widget-image" data-id="8fe2039" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img decoding="async" width="300" height="126" src="../../wp-content/uploads/2026/05/usp-logo-eps-branco-300x126.png" class="attachment-medium size-medium wp-image-809" alt="" srcset="../../wp-content/uploads/2026/05/usp-logo-eps-branco-300x126.png 300w, ../../wp-content/uploads/2026/05/usp-logo-eps-branco-768x324.png 768w, ../../wp-content/uploads/2026/05/usp-logo-eps-branco.png 800w" sizes="(max-width: 300px) 100vw, 300px" />															</div>
-				<div class="elementor-element elementor-element-844ae37 elementor-widget elementor-widget-heading" data-id="844ae37" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-784b2da elementor-widget elementor-widget-heading" data-id="784b2da" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">  y</h2>				</div>
-				<div class="elementor-element elementor-element-5c449e5 elementor-widget elementor-widget-image" data-id="5c449e5" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-acc29ae elementor-widget elementor-widget-image" data-id="acc29ae" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img loading="lazy" decoding="async" width="300" height="125" src="../../wp-content/uploads/2026/06/Google-logo-300x125.png" class="attachment-medium size-medium wp-image-1545" alt="" srcset="../../wp-content/uploads/2026/06/Google-logo-300x125.png 300w, ../../wp-content/uploads/2026/06/Google-logo-1024x427.png 1024w, ../../wp-content/uploads/2026/06/Google-logo-768x320.png 768w, ../../wp-content/uploads/2026/06/Google-logo-1536x640.png 1536w, ../../wp-content/uploads/2026/06/Google-logo-2048x853.png 2048w" sizes="(max-width: 300px) 100vw, 300px" />															</div>
 				</div>
-		<div class="elementor-element elementor-element-bcfd92e e-con-full e-flex e-con e-child" data-id="bcfd92e" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-bf4ccaf cat-menu elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="bf4ccaf" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-element elementor-element-e424199 e-con-full e-flex e-con e-child" data-id="e424199" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-512f68d cat-menu elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="512f68d" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
 											<a href="../sobre/index.html">
@@ -581,35 +582,35 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 									</li>
 						</ul>
 						</div>
-		<div class="elementor-element elementor-element-5e7bb44 e-con-full e-flex e-con e-child" data-id="5e7bb44" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-cb66567 e-con-full e-flex e-con e-child" data-id="cb66567" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-c9e19bf elementor-view-default elementor-widget elementor-widget-icon" data-id="c9e19bf" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-9690ba4 e-con-full e-flex e-con e-child" data-id="9690ba4" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-da78482 e-con-full e-flex e-con e-child" data-id="da78482" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0471f62 elementor-view-default elementor-widget elementor-widget-icon" data-id="0471f62" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-f410a23 elementor-view-default elementor-widget elementor-widget-icon" data-id="f410a23" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-a6123de elementor-view-default elementor-widget elementor-widget-icon" data-id="a6123de" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-6ce2d5f elementor-view-default elementor-widget elementor-widget-icon" data-id="6ce2d5f" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-0f0d691 elementor-view-default elementor-widget elementor-widget-icon" data-id="0f0d691" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>			</a>
 		</div>
 						</div>
-				<div class="elementor-element elementor-element-27391a0 elementor-view-default elementor-widget elementor-widget-icon" data-id="27391a0" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-f0f1ea5 elementor-view-default elementor-widget elementor-widget-icon" data-id="f0f1ea5" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#">
 			<svg aria-hidden="true" class="e-font-icon-svg e-fas-envelope" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>			</a>
 		</div>
 						</div>
 				</div>
-		<div class="elementor-element elementor-element-8814e98 e-con-full e-flex e-con e-child" data-id="8814e98" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-4bfecb8 elementor-widget elementor-widget-text-editor" data-id="4bfecb8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+		<div class="elementor-element elementor-element-aae1c62 e-con-full e-flex e-con e-child" data-id="aae1c62" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4621f17 elementor-widget elementor-widget-text-editor" data-id="4621f17" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>Diseño de <a href="https://www.victoriaflaksbaum.com/">Victoria Flaksbaum</a></p>								</div>
 				</div>
 				</div>
